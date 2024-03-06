@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "znt+KiLRWEYjpeKD8Pa/0eAlfXTusaLapUs1mE6QIGz5RGDXaPLfuIsLDx3CbVLTqgE+5x0qNoNFHbJ7zJYO3w==",
+  "dgSpecHash": "9qMPVDcUjg3mvHZmmq9xtqLecWMVN6dW7nF1GR+icaQMeMtM+KNubgW7g0ycjKwL8tkH7GbEpBAgOEN2BAG2Uw==",
   "success": true,
-  "projectFilePath": "C:\\Apps\\BookSamsys\\BookSamsys.Infrastructure\\BookSamsys.Infrastructure.csproj",
+  "projectFilePath": "C:\\Apps\\GitHub\\BookSamsys\\book-samsys-backend\\BookSamsys.Infrastructure\\BookSamsys.Infrastructure.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }

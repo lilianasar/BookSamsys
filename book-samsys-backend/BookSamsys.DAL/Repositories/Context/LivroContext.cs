@@ -6,9 +6,12 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace BookSamsys.DAL.Context {
-    public class LivroContext : DbContext {
-        public LivroContext(DbContextOptions<LivroContext> options) : base(options) {
+namespace BookSamsys.DAL.Repositories.Context
+{
+    public class LivroContext : DbContext
+    {
+        public LivroContext(DbContextOptions<LivroContext> options) : base(options)
+        {
 
         }
 

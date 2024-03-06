@@ -1,4 +1,4 @@
-using BookSamsys.DAL.Context;
+using BookSamsys.DAL.Repositories.Context;
 using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);

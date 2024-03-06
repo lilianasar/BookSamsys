@@ -10,4 +10,8 @@
     <ProjectReference Include="..\BookSamsys.Infrastructure\BookSamsys.Infrastructure.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="Services\" />
+  </ItemGroup>
+
 </Project>

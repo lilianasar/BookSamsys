@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "7jKNtJt96DV1zjidFpcMPHIlBY+DFPTqqLMjip7Fgfo7vfJLZsnt+3qLQ7PUk2YlCazCoT+yilafOR6uGXmxng==",
+  "dgSpecHash": "Xm2uzrMd0sgY/fl6rFTVv7vpz1Uwvuh8nF4Ps7jgE+Lodlk+VSdvyHvTbmMmNmzmBcSOhPndVTCO13aEc+SWrA==",
   "success": true,
-  "projectFilePath": "C:\\Apps\\BookSamsys\\BookSamsys\\BookSamsys.csproj",
+  "projectFilePath": "C:\\Apps\\GitHub\\BookSamsys\\book-samsys-backend\\BookSamsys\\BookSamsys.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\lilia\\.nuget\\packages\\azure.core\\1.35.0\\azure.core.1.35.0.nupkg.sha512",
     "C:\\Users\\lilia\\.nuget\\packages\\azure.identity\\1.10.3\\azure.identity.1.10.3.nupkg.sha512",

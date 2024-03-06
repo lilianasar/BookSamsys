@@ -8,6 +8,6 @@ build_property.PlatformNeutralAssembly =
 build_property.EnforceExtendedAnalyzerRules = 
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = BookSamsys.Infrastructure
-build_property.ProjectDir = C:\Apps\BookSamsys\BookSamsys.Infrastructure\
+build_property.ProjectDir = C:\Apps\GitHub\BookSamsys\book-samsys-backend\BookSamsys.Infrastructure\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 
