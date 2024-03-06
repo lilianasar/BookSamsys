@@ -1,0 +1,15 @@
+C:\Apps\BookSamsys\BookSamsys.BLL\bin\Debug\net8.0\BookSamsys.BLL.deps.json
+C:\Apps\BookSamsys\BookSamsys.BLL\bin\Debug\net8.0\BookSamsys.BLL.dll
+C:\Apps\BookSamsys\BookSamsys.BLL\bin\Debug\net8.0\BookSamsys.BLL.pdb
+C:\Apps\BookSamsys\BookSamsys.BLL\bin\Debug\net8.0\BookSamsys.Infrastructure.dll
+C:\Apps\BookSamsys\BookSamsys.BLL\bin\Debug\net8.0\BookSamsys.Infrastructure.pdb
+C:\Apps\BookSamsys\BookSamsys.BLL\obj\Debug\net8.0\BookSamsys.BLL.csproj.AssemblyReference.cache
+C:\Apps\BookSamsys\BookSamsys.BLL\obj\Debug\net8.0\BookSamsys.BLL.GeneratedMSBuildEditorConfig.editorconfig
+C:\Apps\BookSamsys\BookSamsys.BLL\obj\Debug\net8.0\BookSamsys.BLL.AssemblyInfoInputs.cache
+C:\Apps\BookSamsys\BookSamsys.BLL\obj\Debug\net8.0\BookSamsys.BLL.AssemblyInfo.cs
+C:\Apps\BookSamsys\BookSamsys.BLL\obj\Debug\net8.0\BookSamsys.BLL.csproj.CoreCompileInputs.cache
+C:\Apps\BookSamsys\BookSamsys.BLL\obj\Debug\net8.0\BookSams.5BE78737.Up2Date
+C:\Apps\BookSamsys\BookSamsys.BLL\obj\Debug\net8.0\BookSamsys.BLL.dll
+C:\Apps\BookSamsys\BookSamsys.BLL\obj\Debug\net8.0\refint\BookSamsys.BLL.dll
+C:\Apps\BookSamsys\BookSamsys.BLL\obj\Debug\net8.0\BookSamsys.BLL.pdb
+C:\Apps\BookSamsys\BookSamsys.BLL\obj\Debug\net8.0\ref\BookSamsys.BLL.dll

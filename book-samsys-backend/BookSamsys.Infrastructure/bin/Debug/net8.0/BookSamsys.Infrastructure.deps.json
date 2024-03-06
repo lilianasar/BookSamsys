@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v8.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v8.0": {
+      "BookSamsys.Infrastructure/1.0.0": {
+        "runtime": {
+          "BookSamsys.Infrastructure.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "BookSamsys.Infrastructure/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

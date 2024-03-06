@@ -1,0 +1,11 @@
+C:\Apps\BookSamsys\BookSamsys.Infrastructure\bin\Debug\net8.0\BookSamsys.Infrastructure.deps.json
+C:\Apps\BookSamsys\BookSamsys.Infrastructure\bin\Debug\net8.0\BookSamsys.Infrastructure.dll
+C:\Apps\BookSamsys\BookSamsys.Infrastructure\bin\Debug\net8.0\BookSamsys.Infrastructure.pdb
+C:\Apps\BookSamsys\BookSamsys.Infrastructure\obj\Debug\net8.0\BookSamsys.Infrastructure.GeneratedMSBuildEditorConfig.editorconfig
+C:\Apps\BookSamsys\BookSamsys.Infrastructure\obj\Debug\net8.0\BookSamsys.Infrastructure.AssemblyInfoInputs.cache
+C:\Apps\BookSamsys\BookSamsys.Infrastructure\obj\Debug\net8.0\BookSamsys.Infrastructure.AssemblyInfo.cs
+C:\Apps\BookSamsys\BookSamsys.Infrastructure\obj\Debug\net8.0\BookSamsys.Infrastructure.csproj.CoreCompileInputs.cache
+C:\Apps\BookSamsys\BookSamsys.Infrastructure\obj\Debug\net8.0\BookSamsys.Infrastructure.dll
+C:\Apps\BookSamsys\BookSamsys.Infrastructure\obj\Debug\net8.0\refint\BookSamsys.Infrastructure.dll
+C:\Apps\BookSamsys\BookSamsys.Infrastructure\obj\Debug\net8.0\BookSamsys.Infrastructure.pdb
+C:\Apps\BookSamsys\BookSamsys.Infrastructure\obj\Debug\net8.0\ref\BookSamsys.Infrastructure.dll
