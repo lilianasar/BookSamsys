@@ -1,8 +1,14 @@
 {
   "version": 2,
-  "dgSpecHash": "9qMPVDcUjg3mvHZmmq9xtqLecWMVN6dW7nF1GR+icaQMeMtM+KNubgW7g0ycjKwL8tkH7GbEpBAgOEN2BAG2Uw==",
+  "dgSpecHash": "d5kIgauLzdS91uu+oe18Xh8DsA/iPdo4txQOuqDVDkKVNiBveIa8D1Jz+nyH0D2g6xYb/oNfJ9oBtPMO9cVnFQ==",
   "success": true,
   "projectFilePath": "C:\\Apps\\GitHub\\BookSamsys\\book-samsys-backend\\BookSamsys.Infrastructure\\BookSamsys.Infrastructure.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\lilia\\.nuget\\packages\\automapper\\13.0.1\\automapper.13.0.1.nupkg.sha512",
+    "C:\\Users\\lilia\\.nuget\\packages\\microsoft.extensions.configuration.abstractions\\8.0.0\\microsoft.extensions.configuration.abstractions.8.0.0.nupkg.sha512",
+    "C:\\Users\\lilia\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\6.0.0\\microsoft.extensions.dependencyinjection.abstractions.6.0.0.nupkg.sha512",
+    "C:\\Users\\lilia\\.nuget\\packages\\microsoft.extensions.options\\6.0.0\\microsoft.extensions.options.6.0.0.nupkg.sha512",
+    "C:\\Users\\lilia\\.nuget\\packages\\microsoft.extensions.primitives\\8.0.0\\microsoft.extensions.primitives.8.0.0.nupkg.sha512"
+  ],
   "logs": []
 }

@@ -1,8 +1,8 @@
 [
   {
-    "ContainingType": "BookSamsys.Controllers.LivroController",
-    "Method": "Get",
-    "RelativePath": "api/Livro",
+    "ContainingType": "BookSamsys.Controllers.BookController",
+    "Method": "GetAll",
+    "RelativePath": "api/Book",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
@@ -10,9 +10,57 @@
     "ReturnTypes": []
   },
   {
-    "ContainingType": "BookSamsys.Controllers.LivroController",
+    "ContainingType": "BookSamsys.Controllers.BookController",
+    "Method": "Create",
+    "RelativePath": "api/Book",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "bookDTO",
+        "Type": "BookSamsys.Infrastructure.DTOs.BookDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "BookSamsys.Controllers.BookController",
+    "Method": "Update",
+    "RelativePath": "api/Book",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "bookDTO",
+        "Type": "BookSamsys.Infrastructure.DTOs.BookDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "BookSamsys.Controllers.BookController",
+    "Method": "Delete",
+    "RelativePath": "api/Book",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "BookSamsys.Controllers.BookController",
     "Method": "GetById",
-    "RelativePath": "api/Livro/{id}",
+    "RelativePath": "api/Book/{id}",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,

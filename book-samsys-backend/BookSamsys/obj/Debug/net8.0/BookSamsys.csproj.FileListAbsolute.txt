@@ -279,3 +279,7 @@ C:\Apps\GitHub\BookSamsys\book-samsys-backend\BookSamsys\obj\Debug\net8.0\refint
 C:\Apps\GitHub\BookSamsys\book-samsys-backend\BookSamsys\obj\Debug\net8.0\BookSamsys.pdb
 C:\Apps\GitHub\BookSamsys\book-samsys-backend\BookSamsys\obj\Debug\net8.0\BookSamsys.genruntimeconfig.cache
 C:\Apps\GitHub\BookSamsys\book-samsys-backend\BookSamsys\obj\Debug\net8.0\ref\BookSamsys.dll
+C:\Apps\GitHub\BookSamsys\book-samsys-backend\BookSamsys\bin\Debug\net8.0\BookSamsys.BLL.dll
+C:\Apps\GitHub\BookSamsys\book-samsys-backend\BookSamsys\bin\Debug\net8.0\BookSamsys.BLL.pdb
+C:\Apps\GitHub\BookSamsys\book-samsys-backend\BookSamsys\bin\Debug\net8.0\AutoMapper.dll
+C:\Apps\GitHub\BookSamsys\book-samsys-backend\BookSamsys\bin\Debug\net8.0\FluentAssertions.dll

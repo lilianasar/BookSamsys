@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("BookSamsys.Infrastructure")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+86a9060fe05f711432969563fb62d73acb649fa4")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+817b44a6f29e6c9681033d3b11a73d247513bc46")]
 [assembly: System.Reflection.AssemblyProductAttribute("BookSamsys.Infrastructure")]
 [assembly: System.Reflection.AssemblyTitleAttribute("BookSamsys.Infrastructure")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

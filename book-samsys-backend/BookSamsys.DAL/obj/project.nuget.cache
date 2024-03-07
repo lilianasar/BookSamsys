@@ -1,11 +1,13 @@
 {
   "version": 2,
-  "dgSpecHash": "eJY40stGN8UIZgzPKKirMhZs1t++ljlrxkWl5eI1Wtu/3lnRNM9Hn4C04FGSdhEicArsqwYRm6KUTRx9QCvuUg==",
+  "dgSpecHash": "sp6SioIZa4YyIw3D34k+dhSIiRjYMTIVdWvpjcr7yOmy2Du6je7JfdCgGi+Pq1ChlDpYWTxfYf61M+fBmAZTlA==",
   "success": true,
   "projectFilePath": "C:\\Apps\\GitHub\\BookSamsys\\book-samsys-backend\\BookSamsys.DAL\\BookSamsys.DAL.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\lilia\\.nuget\\packages\\automapper\\13.0.1\\automapper.13.0.1.nupkg.sha512",
     "C:\\Users\\lilia\\.nuget\\packages\\azure.core\\1.35.0\\azure.core.1.35.0.nupkg.sha512",
     "C:\\Users\\lilia\\.nuget\\packages\\azure.identity\\1.10.3\\azure.identity.1.10.3.nupkg.sha512",
+    "C:\\Users\\lilia\\.nuget\\packages\\fluentassertions\\6.12.0\\fluentassertions.6.12.0.nupkg.sha512",
     "C:\\Users\\lilia\\.nuget\\packages\\microsoft.bcl.asyncinterfaces\\1.1.1\\microsoft.bcl.asyncinterfaces.1.1.1.nupkg.sha512",
     "C:\\Users\\lilia\\.nuget\\packages\\microsoft.csharp\\4.5.0\\microsoft.csharp.4.5.0.nupkg.sha512",
     "C:\\Users\\lilia\\.nuget\\packages\\microsoft.data.sqlclient\\5.1.4\\microsoft.data.sqlclient.5.1.4.nupkg.sha512",

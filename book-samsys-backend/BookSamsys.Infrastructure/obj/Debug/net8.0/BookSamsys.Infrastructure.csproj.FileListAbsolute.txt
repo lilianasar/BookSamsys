@@ -21,3 +21,4 @@ C:\Apps\GitHub\BookSamsys\book-samsys-backend\BookSamsys.Infrastructure\obj\Debu
 C:\Apps\GitHub\BookSamsys\book-samsys-backend\BookSamsys.Infrastructure\obj\Debug\net8.0\refint\BookSamsys.Infrastructure.dll
 C:\Apps\GitHub\BookSamsys\book-samsys-backend\BookSamsys.Infrastructure\obj\Debug\net8.0\BookSamsys.Infrastructure.pdb
 C:\Apps\GitHub\BookSamsys\book-samsys-backend\BookSamsys.Infrastructure\obj\Debug\net8.0\ref\BookSamsys.Infrastructure.dll
+C:\Apps\GitHub\BookSamsys\book-samsys-backend\BookSamsys.Infrastructure\obj\Debug\net8.0\BookSamsys.Infrastructure.csproj.AssemblyReference.cache

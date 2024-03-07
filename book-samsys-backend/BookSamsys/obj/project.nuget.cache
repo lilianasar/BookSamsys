@@ -1,11 +1,13 @@
 {
   "version": 2,
-  "dgSpecHash": "Xm2uzrMd0sgY/fl6rFTVv7vpz1Uwvuh8nF4Ps7jgE+Lodlk+VSdvyHvTbmMmNmzmBcSOhPndVTCO13aEc+SWrA==",
+  "dgSpecHash": "K0ZwuXj46QMKH4poNMmPMXQLjN2FNzqORQFilQQFQerXfJk1DgqYdO5y7L5Rkjt9pxwpNZ1i8NmuciO/aJnMmw==",
   "success": true,
   "projectFilePath": "C:\\Apps\\GitHub\\BookSamsys\\book-samsys-backend\\BookSamsys\\BookSamsys.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\lilia\\.nuget\\packages\\automapper\\13.0.1\\automapper.13.0.1.nupkg.sha512",
     "C:\\Users\\lilia\\.nuget\\packages\\azure.core\\1.35.0\\azure.core.1.35.0.nupkg.sha512",
     "C:\\Users\\lilia\\.nuget\\packages\\azure.identity\\1.10.3\\azure.identity.1.10.3.nupkg.sha512",
+    "C:\\Users\\lilia\\.nuget\\packages\\fluentassertions\\6.12.0\\fluentassertions.6.12.0.nupkg.sha512",
     "C:\\Users\\lilia\\.nuget\\packages\\humanizer.core\\2.14.1\\humanizer.core.2.14.1.nupkg.sha512",
     "C:\\Users\\lilia\\.nuget\\packages\\microsoft.bcl.asyncinterfaces\\6.0.0\\microsoft.bcl.asyncinterfaces.6.0.0.nupkg.sha512",
     "C:\\Users\\lilia\\.nuget\\packages\\microsoft.codeanalysis.analyzers\\3.3.3\\microsoft.codeanalysis.analyzers.3.3.3.nupkg.sha512",
