@@ -102,9 +102,6 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "C:\\Apps\\GitHub\\BookSamsys\\book-samsys-backend\\BookSamsys.BLL\\BookSamsys.BLL.csproj": {
-                "projectPath": "C:\\Apps\\GitHub\\BookSamsys\\book-samsys-backend\\BookSamsys.BLL\\BookSamsys.BLL.csproj"
-              },
               "C:\\Apps\\GitHub\\BookSamsys\\book-samsys-backend\\BookSamsys.Infrastructure\\BookSamsys.Infrastructure.csproj": {
                 "projectPath": "C:\\Apps\\GitHub\\BookSamsys\\book-samsys-backend\\BookSamsys.Infrastructure\\BookSamsys.Infrastructure.csproj"
               }

@@ -11,7 +11,7 @@ namespace BookSamsys.Infrastructure.Interfaces {
         Task<Book> Create(Book book);
         Task<Book> Update(Book book);
         Task<Book> Delete(int id);
-        Task<List<Book>> GetAll();
+        Task<IEnumerable<Book>> GetAll();
         Task<Book> GetById(int id);
     }
 }

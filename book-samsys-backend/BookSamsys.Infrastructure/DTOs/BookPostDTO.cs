@@ -1,15 +1,13 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel;
 using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Text;
-using System.Text.Json.Serialization;
 using System.Threading.Tasks;
 
 namespace BookSamsys.Infrastructure.DTOs {
-    public class BookDTO {
-        [Required(ErrorMessage = "O identificador de livro é necessário")]
-        public required int Id { get; set; }
+    public class BookPostDTO {
 
         [Required(ErrorMessage = "O ISBN é necessário")]
         public required string Isbn { get; set; }
@@ -22,4 +20,3 @@ namespace BookSamsys.Infrastructure.DTOs {
         public decimal Preco { get; set; } = decimal.Zero;
     }
 }
-

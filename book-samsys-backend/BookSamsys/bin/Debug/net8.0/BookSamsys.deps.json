@@ -939,7 +939,6 @@
       },
       "BookSamsys.DAL/1.0.0": {
         "dependencies": {
-          "BookSamsys.BLL": "1.0.0",
           "BookSamsys.Infrastructure": "1.0.0",
           "FluentAssertions": "6.12.0",
           "Microsoft.EntityFrameworkCore.SqlServer": "8.0.2"

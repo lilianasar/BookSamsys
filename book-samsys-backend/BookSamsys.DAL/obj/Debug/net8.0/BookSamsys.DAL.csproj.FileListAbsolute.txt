@@ -29,5 +29,3 @@ C:\Apps\GitHub\BookSamsys\book-samsys-backend\BookSamsys.DAL\obj\Debug\net8.0\Bo
 C:\Apps\GitHub\BookSamsys\book-samsys-backend\BookSamsys.DAL\obj\Debug\net8.0\refint\BookSamsys.DAL.dll
 C:\Apps\GitHub\BookSamsys\book-samsys-backend\BookSamsys.DAL\obj\Debug\net8.0\BookSamsys.DAL.pdb
 C:\Apps\GitHub\BookSamsys\book-samsys-backend\BookSamsys.DAL\obj\Debug\net8.0\ref\BookSamsys.DAL.dll
-C:\Apps\GitHub\BookSamsys\book-samsys-backend\BookSamsys.DAL\bin\Debug\net8.0\BookSamsys.BLL.dll
-C:\Apps\GitHub\BookSamsys\book-samsys-backend\BookSamsys.DAL\bin\Debug\net8.0\BookSamsys.BLL.pdb

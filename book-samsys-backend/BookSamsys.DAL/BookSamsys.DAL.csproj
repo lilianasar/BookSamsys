@@ -12,7 +12,6 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\BookSamsys.BLL\BookSamsys.BLL.csproj" />
     <ProjectReference Include="..\BookSamsys.Infrastructure\BookSamsys.Infrastructure.csproj" />
   </ItemGroup>
 

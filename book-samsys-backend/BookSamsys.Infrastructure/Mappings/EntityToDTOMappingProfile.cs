@@ -12,6 +12,7 @@ namespace BookSamsys.Infrastructure.Mappings {
 
         public EntityToDTOMappingProfile() { 
             CreateMap<Book, BookDTO>().ReverseMap();
+            CreateMap<Book, BookPostDTO>().ReverseMap();
         }
     }
 }

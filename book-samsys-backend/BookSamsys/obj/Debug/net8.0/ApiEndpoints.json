@@ -18,8 +18,8 @@
     "Order": 0,
     "Parameters": [
       {
-        "Name": "bookDTO",
-        "Type": "BookSamsys.Infrastructure.DTOs.BookDTO",
+        "Name": "bookPostDTO",
+        "Type": "BookSamsys.Infrastructure.DTOs.BookPostDTO",
         "IsRequired": true
       }
     ],

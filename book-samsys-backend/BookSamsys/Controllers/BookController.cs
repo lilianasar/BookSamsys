@@ -1,5 +1,4 @@
-﻿using BookSamsys.BLL.Interfaces;
-using BookSamsys.DAL.Context;
+﻿using BookSamsys.DAL.Context;
 using BookSamsys.Infrastructure.DTOs;
 using BookSamsys.Infrastructure.Interfaces;
 using Microsoft.AspNetCore.Http;
@@ -29,9 +28,11 @@ namespace BookSamsys.Controllers {
         }
 
         [HttpPost]
-        public async Task<ActionResult> Create(BookDTO bookDTO) {
-            var bookDTOCreated = await _bookService.Create(bookDTO);
-             return bookDTOCreated == null ? BadRequest("Ocorreu um erro ao adicionar o livro.") : Ok("Livro adicionado com sucesso!");
+        public async Task<ActionResult> Create(BookPostDTO bookPostDTO) {
+            var bookDTOCreated = await _bookService.Create(bookPostDTO);
+            //if (bookPostDTO.Preco < 0 ) bookDTOCreated.Preco = 0;
+            //if (bookPostDTO.Isbn == bookDTOCreated.Isbn) bookPostDTO.Isbn = "";
+            return bookDTOCreated == null ? BadRequest("Ocorreu um erro ao adicionar o livro.") : Ok("Livro adicionado com sucesso!");
         }
 
         [HttpPut]

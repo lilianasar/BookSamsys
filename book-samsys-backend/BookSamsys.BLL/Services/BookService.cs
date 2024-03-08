@@ -1,5 +1,4 @@
 ﻿using AutoMapper;
-using BookSamsys.BLL.Interfaces;
 using BookSamsys.Infrastructure.DTOs;
 using BookSamsys.Infrastructure.Entities;
 using BookSamsys.Infrastructure.Interfaces;
@@ -15,11 +14,23 @@ namespace BookSamsys.BLL.Services {
             _repository = repository;
             _mapper = mapper;
         }
-        public async Task<BookDTO> Create(BookDTO bookDTO) {
-            var book = _mapper.Map<Book>(bookDTO);
+
+        public async Task<IEnumerable<BookDTO>> GetAll() {
+            var books = await _repository.GetAll();
+            return _mapper.Map<IEnumerable<BookDTO>>(books);
+        }
+
+        public async Task<BookDTO> GetById(int id) {
+            var book = await _repository.GetById(id);
+            return _mapper.Map<BookDTO>(book);
+        }
+
+        //Não aparecer id, pois é automático
+        public async Task<BookPostDTO> Create(BookPostDTO bookPostDTO) {
+            var book = _mapper.Map<Book>(bookPostDTO);
             var bookCreated = await _repository.Create(book);
             //converte livro alterado para livroDTO
-            return _mapper.Map<BookDTO>(bookCreated);
+            return _mapper.Map<BookPostDTO>(bookCreated);
         }
 
         public async Task<BookDTO> Update(BookDTO bookDTO) {
@@ -34,18 +45,5 @@ namespace BookSamsys.BLL.Services {
             //converte livro alterado para livroDTO
             return _mapper.Map<BookDTO>(bookDeleted);
         }
-
-        public async Task<List<BookDTO>> GetAll() {
-            var books = await _repository.GetAll();
-            return _mapper.Map<List<BookDTO>>(books);
-        }
-
-        public async Task<BookDTO> GetById(int id) {
-            var book = await _repository.GetById(id);
-            return _mapper.Map<BookDTO>(book);
-        }
-
-        
     }
-
 }
