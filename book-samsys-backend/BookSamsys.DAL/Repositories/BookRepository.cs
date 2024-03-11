@@ -26,6 +26,7 @@ namespace BookSamsys.DAL.Repositories {
         }
 
         public async Task<Book> Create(Book book) {
+
             _context.Livros.Add(book);
             await _context.SaveChangesAsync();
             return book;
@@ -45,6 +46,22 @@ namespace BookSamsys.DAL.Repositories {
                 return book;
             }
             return null;
+        }
+
+        public async Task<bool> AvailabilityIsbn(string isbn) {
+            //verifica se existe um isbn igual já atribuido - se corresponder, false
+            var isbnAvailable = await _context.Livros.Where(x => x.Isbn == isbn).AnyAsync();
+
+            return !isbnAvailable;
+        }
+
+        public Task<bool> ValidatePrice(decimal preco) {
+            //verifica se o preço é negativo
+            var priceValidate = preco < 0;
+            
+            return Task.FromResult(!priceValidate);
+            //return preco < 0 ? !priceValidate : priceValidate;
+
         }
     }
 

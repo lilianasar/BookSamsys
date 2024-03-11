@@ -45,5 +45,13 @@ namespace BookSamsys.BLL.Services {
             //converte livro alterado para livroDTO
             return _mapper.Map<BookDTO>(bookDeleted);
         }
+
+        public async Task<bool> AvailabilityIsbn(string isbn) {
+            return await _repository.AvailabilityIsbn(isbn);
+        }
+
+        public async Task<bool> ValidatePrice(decimal preco) {
+            return await _repository.ValidatePrice(preco);
+        }
     }
 }

@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "d5kIgauLzdS91uu+oe18Xh8DsA/iPdo4txQOuqDVDkKVNiBveIa8D1Jz+nyH0D2g6xYb/oNfJ9oBtPMO9cVnFQ==",
+  "dgSpecHash": "FP2v8u35Kg/7SZsmv0kO3nEmmQPqGMgWb6rqZbrEi+5k/4WmeaggARShmE3f497zB45MrVRtfS8BJmQZIIP24w==",
   "success": true,
   "projectFilePath": "C:\\Apps\\GitHub\\BookSamsys\\book-samsys-backend\\BookSamsys.Infrastructure\\BookSamsys.Infrastructure.csproj",
   "expectedPackageFiles": [

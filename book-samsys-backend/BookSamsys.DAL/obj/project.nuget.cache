@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "PFBVSDaougw4GM9LNMQbacSAm5e91kTQ9V1NZ3GA9GMFydpasbUjYMtlkqXMoZf538D8IUP8V88b+cSeT8vo7g==",
+  "dgSpecHash": "6ExNLr3V1G51bDe9a6HAKIbkkEqXj1UXU6QNpBky6GxdLCJXsBECpHK1369h+vQvevEfpfvm7eTaxOHWV//KGA==",
   "success": true,
   "projectFilePath": "C:\\Apps\\GitHub\\BookSamsys\\book-samsys-backend\\BookSamsys.DAL\\BookSamsys.DAL.csproj",
   "expectedPackageFiles": [

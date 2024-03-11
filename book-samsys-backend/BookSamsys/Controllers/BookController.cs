@@ -29,14 +29,32 @@ namespace BookSamsys.Controllers {
 
         [HttpPost]
         public async Task<ActionResult> Create(BookPostDTO bookPostDTO) {
+            var available = await _bookService.AvailabilityIsbn(bookPostDTO.Isbn);
+            var valid = await _bookService.ValidatePrice(bookPostDTO.Preco);
+            
+            if (!available){
+                return BadRequest("O Isbn não pode ser repetido.");
+            }
+            if (!valid) {
+                return BadRequest("O preço não pode ser negativo.");
+            }
+
             var bookDTOCreated = await _bookService.Create(bookPostDTO);
-            //if (bookPostDTO.Preco < 0 ) bookDTOCreated.Preco = 0;
-            //if (bookPostDTO.Isbn == bookDTOCreated.Isbn) bookPostDTO.Isbn = "";
             return bookDTOCreated == null ? BadRequest("Ocorreu um erro ao adicionar o livro.") : Ok("Livro adicionado com sucesso!");
         }
 
         [HttpPut]
         public async Task<ActionResult> Update(BookDTO bookDTO) {
+            var available = await _bookService.AvailabilityIsbn(bookDTO.Isbn);
+            var valid = await _bookService.ValidatePrice(bookDTO.Preco);
+
+            if (!available) {
+                return BadRequest("O Isbn não pode ser repetido.");
+            }
+            if (!valid) {
+                return BadRequest("O preço não pode ser negativo.");
+            }
+
             var bookDTOUpdated = await _bookService.Update(bookDTO);
             return bookDTOUpdated == null ? BadRequest("Ocorreu um erro ao alterar o livro.") : Ok("Livro alterado com sucesso!");
         }

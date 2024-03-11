@@ -13,5 +13,7 @@ namespace BookSamsys.Infrastructure.Interfaces {
         Task<Book> Delete(int id);
         Task<IEnumerable<Book>> GetAll();
         Task<Book> GetById(int id);
+        Task<bool> AvailabilityIsbn(string isbn);
+        Task<bool> ValidatePrice(decimal preco);
     }
 }

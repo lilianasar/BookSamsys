@@ -12,7 +12,7 @@ namespace BookSamsys.DAL.Migrations
 {
     [DbContext(typeof(BookContext))]
     [Migration("20240308155152_initial")]
-    partial class initial
+    partial class Initial
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
