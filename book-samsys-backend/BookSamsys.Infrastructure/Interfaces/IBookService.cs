@@ -1,19 +1,19 @@
 ﻿using BookSamsys.Infrastructure.DTOs;
-using BookSamsys.Infrastructure.Entities;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace BookSamsys.Infrastructure.Interfaces {
+namespace BookSamsys.Infrastructure.Interfaces
+{
     public interface IBookService {
-        Task<BookPostDTO> Create(BookPostDTO bookPostDTO);
-        Task<BookDTO> Update(BookDTO bookDTO);
-        Task<BookDTO> Delete(int id);
-        Task<IEnumerable<BookDTO>> GetAll();
-        Task<BookDTO> GetById(int id);
-        Task<bool> AvailabilityIsbn(string isbn);
-        Task<bool> ValidatePrice(decimal preco);
+        Task<MessagingHelper<IEnumerable<BookDTO>>> GetAll();
+        Task<MessagingHelper<BookDTO>> GetById(int id);
+        Task<MessagingHelper<BookPostDTO>> Create(BookPostDTO bookPostDTO);
+        Task<MessagingHelper<BookDTO>> Update(BookDTO bookDTO);
+        Task<MessagingHelper<BookDTO>> Delete(int id);
+        //Task<MessagingHelper<bool>> AvailabilityIsbn(string isbn);
+        Task<MessagingHelper<bool>> ValidatePrice(decimal preco);
     }
 }

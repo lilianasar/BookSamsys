@@ -55,14 +55,14 @@ namespace BookSamsys.DAL.Repositories {
             return !isbnAvailable;
         }
 
-        public Task<bool> ValidatePrice(decimal preco) {
+        /*public Task<bool> ValidatePrice(decimal preco) {
             //verifica se o preço é negativo
             var priceValidate = preco < 0;
             
             return Task.FromResult(!priceValidate);
             //return preco < 0 ? !priceValidate : priceValidate;
 
-        }
+        }*/
     }
 
 }
