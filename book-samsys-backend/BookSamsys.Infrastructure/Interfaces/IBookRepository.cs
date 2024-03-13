@@ -13,7 +13,7 @@ namespace BookSamsys.Infrastructure.Interfaces {
         Task<Book> Create(Book book);
         Task<Book> Update(Book book);
         Task<Book> Delete(int id);
-        Task<bool> AvailabilityIsbn(string isbn);
+        Task<bool> AvailabilityIsbn(string isbn, int id);
         //Task<bool> ValidatePrice(decimal preco);
     }
 }

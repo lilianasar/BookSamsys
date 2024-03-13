@@ -3,10 +3,13 @@ using BookSamsys.BLL.Services;
 using BookSamsys.DAL.Context;
 using BookSamsys.Infrastructure.DTOs;
 using BookSamsys.Infrastructure.Interfaces;
+using Microsoft.AspNetCore.Authentication.Cookies;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Http.HttpResults;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Server.IIS;
+using Microsoft.AspNetCore.Server.Kestrel.Core;
+using System.Reflection.Metadata.Ecma335;
 
 namespace BookSamsys.Controllers {
     [Route("api/[controller]")]
@@ -20,50 +23,35 @@ namespace BookSamsys.Controllers {
         }
 
         [HttpGet]
-        public async Task<MessagingHelper<IEnumerable<BookDTO>>> GetAll() {
-            var responseBooksDTO = await _bookService.GetAll();
-            return responseBooksDTO;
+        public async Task<ActionResult<IEnumerable<BookDTO>>> GetAll() {
+            var responseBooksDTOGetAll = await _bookService.GetAll();
+            return responseBooksDTOGetAll.Success == false ? BadRequest(responseBooksDTOGetAll.Message) : Ok(responseBooksDTOGetAll);
         }
 
         [HttpGet("{id}")]
-        public async Task<MessagingHelper<BookDTO>> GetById(int id) {
-            var responseBookDTO = await _bookService.GetById(id);
-            return responseBookDTO;
+        public async Task<ActionResult<BookDTO>> GetById(int id) {
+            var responseBookDTOGetById = await _bookService.GetById(id);
+            return responseBookDTOGetById.Success == false ? BadRequest(responseBookDTOGetById.Message) : Ok(responseBookDTOGetById);
         }
 
         [HttpPost]
-        public async Task<MessagingHelper<BookPostDTO>> Create(BookPostDTO bookPostDTO) {
+        public async Task<ActionResult<BookPostDTO>> Create(BookPostDTO bookPostDTO) {
             //var responseAvailable = await _bookService.AvailabilityIsbn(bookPostDTO.Isbn);
             //var responseValid = await _bookService.ValidatePrice(bookPostDTO.Preco);
             var responseBookDTOCreated = await _bookService.Create(bookPostDTO);
-            return responseBookDTOCreated;
-            /*if (responseBookDTOCreated.Success == false) {
-                return BadRequest();
-            } else {
-                return Ok();
-            }*/
+            return responseBookDTOCreated.Success == false ? BadRequest(responseBookDTOCreated.Message) : Ok(responseBookDTOCreated);
         }
-        /*
+        
         [HttpPut]
         public async Task<ActionResult> Update(BookDTO bookDTO) {
-            var available = await _bookService.AvailabilityIsbn(bookDTO.Isbn);
-            var valid = await _bookService.ValidatePrice(bookDTO.Preco);
-
-            if (!available) {
-                return BadRequest("O Isbn não pode ser repetido.");
-            }
-            if (!valid) {
-                return BadRequest("O preço não pode ser negativo.");
-            }
-
-            var bookDTOUpdated = await _bookService.Update(bookDTO);
-            return bookDTOUpdated == null ? BadRequest("Ocorreu um erro ao alterar o livro.") : Ok("Livro alterado com sucesso!");
-        }*/
+            var responseBookDTOUpdated = await _bookService.Update(bookDTO);
+            return responseBookDTOUpdated.Success == false ? BadRequest(responseBookDTOUpdated.Message) : Ok(responseBookDTOUpdated); ;
+        }
 
         [HttpDelete]
-        public async Task<MessagingHelper<BookDTO>> Delete(int id) {
+        public async Task<ActionResult<BookDTO>> Delete(int id) {
             var responseBookDTODeleted = await _bookService.Delete(id);
-            return responseBookDTODeleted;
+            return responseBookDTODeleted.Success == false ? BadRequest(responseBookDTODeleted.Message) : Ok(responseBookDTODeleted);
         }
     }
 

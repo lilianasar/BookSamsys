@@ -2,43 +2,57 @@
 using BookSamsys.Infrastructure.DTOs;
 using BookSamsys.Infrastructure.Entities;
 using BookSamsys.Infrastructure.Interfaces;
+using System.Linq.Expressions;
 
-namespace BookSamsys.BLL.Services
-{
+namespace BookSamsys.BLL.Services {
     public class BookService : IBookService {
 
         private readonly IBookRepository _repository;
         private readonly IMapper _mapper;
 
         //Recebe repositorio e atribui a _repository
-        public BookService(IBookRepository repository, IMapper mapper) {  
+        public BookService(IBookRepository repository, IMapper mapper) {
             _repository = repository;
             _mapper = mapper;
         }
 
         public async Task<MessagingHelper<IEnumerable<BookDTO>>> GetAll() {
             MessagingHelper<IEnumerable<BookDTO>> response = new();
-            var books = await _repository.GetAll();
-            if (books == null) {
-                response.Success = false;
-                response.Message = "Não foram encontrados livros.";
+            try { 
+                var books = await _repository.GetAll();
+                if (books == null) {
+                    response.Success = false;
+                    response.Message = "Não foram encontrados livros.";
+                    return response;
+                }
+                response.Obj = _mapper.Map<IEnumerable<BookDTO>>(books);
+                response.Success = true;
+                response.Message = "Os livros existentes são os seguintes:";
                 return response;
+            } catch (Exception ex) {
+                response.Success = false;
+                response.Message = "Ocorreu um erro ao obter os livros. Erro: " + ex.Message;
             }
-            response.Success = true;
-            response.Obj = _mapper.Map<IEnumerable<BookDTO>>(books);
             return response;
         }
 
         public async Task<MessagingHelper<BookDTO>> GetById(int id) {
             MessagingHelper<BookDTO> response = new();
-            var book = await _repository.GetById(id);
-            if(book == null) {
-                response.Success = false;
-                response.Message = "Livro não encontrado.";
+            try { 
+                var book = await _repository.GetById(id);
+                if (book == null) {
+                    response.Success = false;
+                    response.Message = "Livro não encontrado.";
+                    return response;
+                }
+                response.Obj = _mapper.Map<BookDTO>(book);
+                response.Success = true;
+                response.Message = "O livro de Id " + id + " é: ";
                 return response;
+            } catch (Exception ex) {
+                response.Success = false;
+                response.Message = "Ocorreu um erro ao obter o livro. Erro: " + ex.Message;
             }
-            response.Success = true;
-            response.Obj = _mapper.Map<BookDTO>(book);
             return response;
         }
 
@@ -46,59 +60,95 @@ namespace BookSamsys.BLL.Services
         public async Task<MessagingHelper<BookPostDTO>> Create(BookPostDTO bookPostDTO) {
             var book = _mapper.Map<Book>(bookPostDTO);
             MessagingHelper<BookPostDTO> response = new();
-            var availabledIsbn = await _repository.AvailabilityIsbn(book.Isbn);
-            var validatedPrice = book.Preco >= 0;
-            var bookCreated = await _repository.Create(book);
-            if(availabledIsbn == false || validatedPrice == false) {
-                bookCreated = null;
-                if (availabledIsbn == false) {
-                    response.Success = false;
-                    response.Message = "O Isbn não pode ser repetido.";
-                    return response;
-                } else if(validatedPrice == false) {
-                    response.Success = false;
-                    response.Message = "O preço não pode ser negativo.";
-                    return response;
+            try {
+                var availabledIsbn = await _repository.AvailabilityIsbn(book.Isbn, book.Id);
+                var validatedPrice = book.Preco >= 0;
+                if (availabledIsbn == false || validatedPrice == false) {
+                    //bookCreated = null;
+                    if (availabledIsbn == false) {
+                        response.Success = false;
+                        response.Message = "O Isbn não pode ser repetido.";
+                        return response;
+                    } else if (validatedPrice == false) {
+                        response.Success = false;
+                        response.Message = "O preço não pode ser negativo.";
+                        return response;
+                    }
                 }
-            }
-            if (bookCreated == null) {
+                /*if(bookCreated == null) {
+                    response.Success = false;
+                    response.Message = "Não foi possível criar o livro.";
+                    return response;
+                } else { 
+                */
+                //converte livro alterado para livroDTO
+                var bookCreated = await _repository.Create(book);
+                response.Obj = _mapper.Map<BookPostDTO>(bookCreated);
+                response.Success = true;
+                response.Message = "Livro criado com sucesso!";
+                
+            } catch (Exception ex) {
                 response.Success = false;
-                response.Message = "O livro não foi criado.";
-                return response;
-            } 
-            response.Success = true;
-            //converte livro alterado para livroDTO
-            response.Obj = _mapper.Map<BookPostDTO>(bookCreated);   
+                response.Message = "Ocorreu um erro ao inserir o livro. Erro: " + ex.Message;  
+            }
             return response;
-            
         }
 
         public async Task<MessagingHelper<BookDTO>> Update(BookDTO bookDTO) {
             var book = _mapper.Map<Book>(bookDTO);
             MessagingHelper<BookDTO> response = new();
-            var bookUpdated = await _repository.Update(book);
-            if(bookUpdated == null) {
+            try {
+                var availabledIsbn = await _repository.AvailabilityIsbn(book.Isbn, book.Id);
+                var validatedPrice = book.Preco >= 0;
+                if (availabledIsbn == false || validatedPrice == false) {
+                    //bookUpdated = null;
+                    if (availabledIsbn == false) {
+                        response.Success = false;
+                        response.Message = "O Isbn não pode ser repetido.";
+                        return response;
+                    } else if (validatedPrice == false) {
+                        response.Success = false;
+                        response.Message = "O preço não pode ser negativo.";
+                        return response;
+                    }
+                }
+                //update
+                var bookUpdated = await _repository.Update(book);
+                if (bookUpdated == null) {
+                    response.Success = false;
+                    response.Message = "O livro não foi atualizado.";
+                    return response;
+                }
+                //converte livro alterado para livroDTO
+                response.Obj = _mapper.Map<BookDTO>(bookUpdated);
+                response.Success = true;
+                response.Message = "Livro atualizado com sucesso!";
+
+            }catch(Exception ex) {
                 response.Success = false;
-                response.Message = "O livro não foi atualizado.";
-                return response;
+                response.Message = "Ocorreu um erro ao atualizar o livro. Erro: " + ex.Message;
             }
-            response.Success = true;
-            //converte livro alterado para livroDTO
-            response.Obj = _mapper.Map<BookDTO>(bookUpdated);
             return response;
         }
 
         public async Task<MessagingHelper<BookDTO>> Delete(int id) {
             MessagingHelper<BookDTO> response = new();
-            var bookDeleted = await _repository.Delete(id);
-            if( bookDeleted == null) {
-                response.Success = false;
-                response.Message = "O livro não foi eliminado.";
+            try { 
+                var bookDeleted = await _repository.Delete(id);
+                if (bookDeleted == null) {
+                    response.Success = false;
+                    response.Message = "O livro não foi eliminado.";
+                    return response;
+                }
+                //converte livro alterado para livroDTO
+                response.Obj = _mapper.Map<BookDTO>(bookDeleted);
+                response.Success = true;
+                response.Message = "Livro eliminado com sucesso!";
                 return response;
+            }catch (Exception ex) {
+                response.Success = false;
+                response.Message = "Ocorreu um erro ao eliminar o livro. Erro: " + ex.Message;
             }
-            response.Success= true;
-            //converte livro alterado para livroDTO
-            response.Obj = _mapper.Map<BookDTO>(bookDeleted);
             return response;
         }
 

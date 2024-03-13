@@ -48,9 +48,9 @@ namespace BookSamsys.DAL.Repositories {
             return null;
         }
 
-        public async Task<bool> AvailabilityIsbn(string isbn) {
+        public async Task<bool> AvailabilityIsbn(string isbn, int id) {
             //verifica se existe um isbn igual já atribuido - se corresponder, false
-            var isbnAvailable = await _context.Livros.Where(x => x.Isbn == isbn).AnyAsync();
+            var isbnAvailable = await _context.Livros.Where(x => x.Isbn == isbn && x.Id != id).AnyAsync();
 
             return !isbnAvailable;
         }
