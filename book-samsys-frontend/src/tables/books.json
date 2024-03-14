@@ -1,0 +1,289 @@
+[
+  {
+    "id": 1,
+    "isbn": "9780151105557",
+    "nome": "Memorial do Convento",
+    "autor": "José Saramago",
+    "preco": 15.98
+  },
+  {
+    "id": 2,
+    "isbn": "9789722055932",
+    "nome": "O Principezinho",
+    "autor": "Antoine de Saint-Exupéry",
+    "preco": 6.91
+  },
+  {
+    "id": 3,
+    "isbn": "isbn random",
+    "nome": "string",
+    "autor": "string",
+    "preco": 0.0
+  },
+  {
+    "id": 4,
+    "isbn": "sks",
+    "nome": "string",
+    "autor": "string",
+    "preco": -5.0
+  },
+  {
+    "id": 5,
+    "isbn": "stringas",
+    "nome": "string",
+    "autor": "string",
+    "preco": 10.5
+  },
+  {
+    "id": 6,
+    "isbn": "isbn randomm",
+    "nome": "string",
+    "autor": "string",
+    "preco": 0.0
+  },
+  {
+    "id": 7,
+    "isbn": "strasas",
+    "nome": "string",
+    "autor": "string",
+    "preco": 8.0
+  },
+  {
+    "id": 9,
+    "isbn": "string",
+    "nome": "string",
+    "autor": "string",
+    "preco": -9.0
+  },
+  {
+    "id": 10,
+    "isbn": "string",
+    "nome": "string",
+    "autor": "string",
+    "preco": -9.0
+  },
+  {
+    "id": 11,
+    "isbn": "string",
+    "nome": "vv",
+    "autor": "string",
+    "preco": 0.0
+  },
+  {
+    "id": 12,
+    "isbn": "string",
+    "nome": "string",
+    "autor": "string",
+    "preco": -5.0
+  },
+  {
+    "id": 13,
+    "isbn": "string",
+    "nome": "string",
+    "autor": "string",
+    "preco": 0.0
+  },
+  {
+    "id": 14,
+    "isbn": "string",
+    "nome": "string",
+    "autor": "string",
+    "preco": 0.0
+  },
+  {
+    "id": 15,
+    "isbn": "stk",
+    "nome": "string",
+    "autor": "string",
+    "preco": 0.0
+  },
+  {
+    "id": 16,
+    "isbn": "stk",
+    "nome": "string",
+    "autor": "string",
+    "preco": 0.0
+  },
+  {
+    "id": 17,
+    "isbn": "dsdsds",
+    "nome": "string",
+    "autor": "string",
+    "preco": -5.0
+  },
+  {
+    "id": 18,
+    "isbn": "dsdsds",
+    "nome": "string",
+    "autor": "string",
+    "preco": -1.0
+  },
+  {
+    "id": 19,
+    "isbn": "gfgfgfgfg",
+    "nome": "string",
+    "autor": "string",
+    "preco": -1.0
+  },
+  {
+    "id": 20,
+    "isbn": "gfgfgfgfg",
+    "nome": "string",
+    "autor": "string",
+    "preco": 0.0
+  },
+  {
+    "id": 21,
+    "isbn": "gfgfgfgfg",
+    "nome": "string",
+    "autor": "string",
+    "preco": 0.0
+  },
+  {
+    "id": 22,
+    "isbn": "gfgfgfgfg",
+    "nome": "string",
+    "autor": "string",
+    "preco": -5.0
+  },
+  {
+    "id": 23,
+    "isbn": "asasasasas",
+    "nome": "string",
+    "autor": "string",
+    "preco": -5.0
+  },
+  {
+    "id": 24,
+    "isbn": "stk",
+    "nome": "string",
+    "autor": "string",
+    "preco": 0.0
+  },
+  {
+    "id": 25,
+    "isbn": "stk",
+    "nome": "string",
+    "autor": "string",
+    "preco": 0.0
+  },
+  {
+    "id": 26,
+    "isbn": "stk",
+    "nome": "string",
+    "autor": "string",
+    "preco": 0.0
+  },
+  {
+    "id": 27,
+    "isbn": "string",
+    "nome": "string",
+    "autor": "string",
+    "preco": 0.0
+  },
+  {
+    "id": 28,
+    "isbn": "string",
+    "nome": "string",
+    "autor": "string",
+    "preco": 0.0
+  },
+  {
+    "id": 29,
+    "isbn": "string",
+    "nome": "string",
+    "autor": "string",
+    "preco": -5.0
+  },
+  {
+    "id": 30,
+    "isbn": "string",
+    "nome": "string",
+    "autor": "string",
+    "preco": 0.0
+  },
+  {
+    "id": 31,
+    "isbn": "string",
+    "nome": "string",
+    "autor": "string",
+    "preco": 0.0
+  },
+  {
+    "id": 32,
+    "isbn": "string",
+    "nome": "string",
+    "autor": "string",
+    "preco": 0.0
+  },
+  {
+    "id": 33,
+    "isbn": "string",
+    "nome": "string",
+    "autor": "string",
+    "preco": 0.0
+  },
+  {
+    "id": 34,
+    "isbn": "string",
+    "nome": "string",
+    "autor": "string",
+    "preco": -5.0
+  },
+  {
+    "id": 35,
+    "isbn": "string",
+    "nome": "string",
+    "autor": "string",
+    "preco": 0.0
+  },
+  {
+    "id": 36,
+    "isbn": "string",
+    "nome": "string",
+    "autor": "string",
+    "preco": 0.0
+  },
+  {
+    "id": 37,
+    "isbn": "string",
+    "nome": "string",
+    "autor": "string",
+    "preco": -5.0
+  },
+  {
+    "id": 38,
+    "isbn": "string",
+    "nome": "string",
+    "autor": "string",
+    "preco": 0.0
+  },
+  {
+    "id": 39,
+    "isbn": "string",
+    "nome": "string",
+    "autor": "string",
+    "preco": -14.0
+  },
+  {
+    "id": 40,
+    "isbn": "sei la",
+    "nome": "string",
+    "autor": "string",
+    "preco": 7.0
+  },
+  {
+    "id": 41,
+    "isbn": "sei naokk",
+    "nome": "string",
+    "autor": "string",
+    "preco": 55.0
+  },
+  {
+    "id": 43,
+    "isbn": "gfgfg",
+    "nome": "string",
+    "autor": "string",
+    "preco": 10.0
+  }
+]
