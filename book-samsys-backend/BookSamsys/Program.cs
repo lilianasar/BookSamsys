@@ -1,7 +1,7 @@
 using BookSamsys.BLL.Services;
 using BookSamsys.DAL.Context;
 using BookSamsys.DAL.Repositories;
-using BookSamsys.Infrastructure.Interfaces;
+using BookSamsys.Infrastructure.Interfaces.Books;
 using BookSamsys.Infrastructure.Mappings;
 using FluentAssertions.Common;
 using Microsoft.EntityFrameworkCore;

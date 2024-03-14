@@ -2,7 +2,7 @@
 using BookSamsys.BLL.Services;
 using BookSamsys.DAL.Context;
 using BookSamsys.Infrastructure.DTOs;
-using BookSamsys.Infrastructure.Interfaces;
+using BookSamsys.Infrastructure.Interfaces.Books;
 using Microsoft.AspNetCore.Authentication.Cookies;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Http.HttpResults;
@@ -11,7 +11,8 @@ using Microsoft.AspNetCore.Server.IIS;
 using Microsoft.AspNetCore.Server.Kestrel.Core;
 using System.Reflection.Metadata.Ecma335;
 
-namespace BookSamsys.Controllers {
+namespace BookSamsys.Controllers
+{
     [Route("api/[controller]")]
     [ApiController]
     public class BookController : ControllerBase {

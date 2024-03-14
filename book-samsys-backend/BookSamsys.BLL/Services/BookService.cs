@@ -1,10 +1,11 @@
 ﻿using AutoMapper;
 using BookSamsys.Infrastructure.DTOs;
 using BookSamsys.Infrastructure.Entities;
-using BookSamsys.Infrastructure.Interfaces;
+using BookSamsys.Infrastructure.Interfaces.Books;
 using System.Linq.Expressions;
 
-namespace BookSamsys.BLL.Services {
+namespace BookSamsys.BLL.Services
+{
     public class BookService : IBookService {
 
         private readonly IBookRepository _repository;

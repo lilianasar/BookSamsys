@@ -1,7 +1,7 @@
 ﻿using BookSamsys.DAL.Context;
 using BookSamsys.Infrastructure.DTOs;
 using BookSamsys.Infrastructure.Entities;
-using BookSamsys.Infrastructure.Interfaces;
+using BookSamsys.Infrastructure.Interfaces.Books;
 using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
@@ -9,7 +9,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace BookSamsys.DAL.Repositories {
+namespace BookSamsys.DAL.Repositories
+{
     public class BookRepository : IBookRepository {
         private readonly BookContext _context;
 
