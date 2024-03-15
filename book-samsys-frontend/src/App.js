@@ -1,12 +1,15 @@
 import './App.css';
+import { TableAxios } from './tables/TableAxios';
+import { TableBasic } from './tables/TableBasic';
 /*import { TableBasic } from './tables/TableBasic';*/
 import { TableJson } from './tables/TableJson';
 
 function App() {
   return (
     <div className="App">
-     
-      <TableJson/>
+      {/*<TableBasic/>*/}
+      {/*<TableJson/>*/}
+      <TableAxios/>
     </div>
   );
 }

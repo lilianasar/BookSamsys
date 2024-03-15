@@ -26,7 +26,7 @@ namespace BookSamsys.Controllers
         [HttpGet]
         public async Task<ActionResult<IEnumerable<BookDTO>>> GetAll() {
             var responseBooksDTOGetAll = await _bookService.GetAll();
-            return responseBooksDTOGetAll.Success == false ? BadRequest(responseBooksDTOGetAll.Message) : Ok(responseBooksDTOGetAll);
+            return responseBooksDTOGetAll.Success == false ? BadRequest(responseBooksDTOGetAll.Message) : Ok(responseBooksDTOGetAll.Obj);
         }
 
         [HttpGet("{id}")]
