@@ -16,6 +16,13 @@ builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen(); //ambiente da API
 
+
+//Adicionar cors -> para ser lido pelo frontend
+builder.Services.AddCors(p => p.AddPolicy("corspolicy", build => {
+    build.WithOrigins("http://localhost:3000").AllowAnyMethod().AllowAnyHeader();
+}));
+
+
 builder.Services.AddDbContext<BookContext>(options => {
     options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection"), //instalar pacote NuGet
     options => options.MigrationsAssembly("BookSamsys.DAL")); //definir para onde vão as migrações
@@ -38,6 +45,9 @@ if (app.Environment.IsDevelopment()) {
     app.UseSwagger();
     app.UseSwaggerUI();
 }
+
+//cors
+app.UseCors("corspolicy");
 
 app.UseHttpsRedirection();
 

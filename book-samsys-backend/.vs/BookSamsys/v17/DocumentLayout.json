@@ -3,11 +3,15 @@
   "WorkspaceRootPath": "C:\\Apps\\GitHub\\BookSamsys\\book-samsys-backend\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{5D49810A-C8B1-45C2-8DBE-81D26CA907D9}|BookSamsys\\BookSamsys.csproj|c:\\apps\\github\\booksamsys\\book-samsys-backend\\booksamsys\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5D49810A-C8B1-45C2-8DBE-81D26CA907D9}|BookSamsys\\BookSamsys.csproj|solutionrelative:booksamsys\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{5D49810A-C8B1-45C2-8DBE-81D26CA907D9}|BookSamsys\\BookSamsys.csproj|C:\\Apps\\GitHub\\BookSamsys\\book-samsys-backend\\booksamsys\\booksamsys.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
       "RelativeMoniker": "D:0:0:{5D49810A-C8B1-45C2-8DBE-81D26CA907D9}|BookSamsys\\BookSamsys.csproj|solutionrelative:booksamsys\\booksamsys.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{5D49810A-C8B1-45C2-8DBE-81D26CA907D9}|BookSamsys\\BookSamsys.csproj|c:\\apps\\github\\booksamsys\\book-samsys-backend\\booksamsys\\controllers\\bookcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{5D49810A-C8B1-45C2-8DBE-81D26CA907D9}|BookSamsys\\BookSamsys.csproj|C:\\Apps\\GitHub\\BookSamsys\\book-samsys-backend\\booksamsys\\controllers\\bookcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{5D49810A-C8B1-45C2-8DBE-81D26CA907D9}|BookSamsys\\BookSamsys.csproj|solutionrelative:booksamsys\\controllers\\bookcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
@@ -17,10 +21,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{5D49810A-C8B1-45C2-8DBE-81D26CA907D9}|BookSamsys\\BookSamsys.csproj|C:\\Apps\\GitHub\\BookSamsys\\book-samsys-backend\\booksamsys\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
       "RelativeMoniker": "D:0:0:{5D49810A-C8B1-45C2-8DBE-81D26CA907D9}|BookSamsys\\BookSamsys.csproj|solutionrelative:booksamsys\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5D49810A-C8B1-45C2-8DBE-81D26CA907D9}|BookSamsys\\BookSamsys.csproj|C:\\Apps\\GitHub\\BookSamsys\\book-samsys-backend\\booksamsys\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5D49810A-C8B1-45C2-8DBE-81D26CA907D9}|BookSamsys\\BookSamsys.csproj|solutionrelative:booksamsys\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{6A945BA9-9796-4A3F-9C40-6C85A5670E52}|BookSamsys.BLL\\BookSamsys.BLL.csproj|C:\\Apps\\GitHub\\BookSamsys\\book-samsys-backend\\booksamsys.bll\\services\\bookservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -90,7 +90,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 7,
+          "SelectedChildIndex": 10,
           "Children": [
             {
               "$type": "Bookmark",
@@ -122,28 +122,52 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "BookSamsys.csproj",
-              "DocumentMoniker": "C:\\Apps\\GitHub\\BookSamsys\\book-samsys-backend\\BookSamsys\\BookSamsys.csproj",
-              "RelativeDocumentMoniker": "BookSamsys\\BookSamsys.csproj",
-              "ToolTip": "C:\\Apps\\GitHub\\BookSamsys\\book-samsys-backend\\BookSamsys\\BookSamsys.csproj",
-              "RelativeToolTip": "BookSamsys\\BookSamsys.csproj",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAANAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2024-03-14T11:05:02.511Z",
-              "EditorCaption": ""
+              "DocumentIndex": 2,
+              "Title": "BookController.cs",
+              "DocumentMoniker": "C:\\Apps\\GitHub\\BookSamsys\\book-samsys-backend\\BookSamsys\\Controllers\\BookController.cs",
+              "RelativeDocumentMoniker": "BookSamsys\\Controllers\\BookController.cs",
+              "ToolTip": "C:\\Apps\\GitHub\\BookSamsys\\book-samsys-backend\\BookSamsys\\Controllers\\BookController.cs",
+              "RelativeToolTip": "BookSamsys\\Controllers\\BookController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABwAAACHAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-07T16:48:24.642Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "IBookRepository.cs",
-              "DocumentMoniker": "C:\\Apps\\GitHub\\BookSamsys\\book-samsys-backend\\BookSamsys.Infrastructure\\Interfaces\\Books\\IBookRepository.cs",
-              "RelativeDocumentMoniker": "BookSamsys.Infrastructure\\Interfaces\\Books\\IBookRepository.cs",
-              "ToolTip": "C:\\Apps\\GitHub\\BookSamsys\\book-samsys-backend\\BookSamsys.Infrastructure\\Interfaces\\Books\\IBookRepository.cs",
-              "RelativeToolTip": "BookSamsys.Infrastructure\\Interfaces\\Books\\IBookRepository.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAFAAAA",
+              "DocumentIndex": 4,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Apps\\GitHub\\BookSamsys\\book-samsys-backend\\BookSamsys\\appsettings.json",
+              "RelativeDocumentMoniker": "BookSamsys\\appsettings.json",
+              "ToolTip": "C:\\Apps\\GitHub\\BookSamsys\\book-samsys-backend\\BookSamsys\\appsettings.json",
+              "RelativeToolTip": "BookSamsys\\appsettings.json",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-03-14T16:02:39.047Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "BookSamsys.http",
+              "DocumentMoniker": "C:\\Apps\\GitHub\\BookSamsys\\book-samsys-backend\\BookSamsys\\BookSamsys.http",
+              "RelativeDocumentMoniker": "BookSamsys\\BookSamsys.http",
+              "ToolTip": "C:\\Apps\\GitHub\\BookSamsys\\book-samsys-backend\\BookSamsys\\BookSamsys.http",
+              "RelativeToolTip": "BookSamsys\\BookSamsys.http",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAIAAAANAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003502|",
+              "WhenOpened": "2024-03-12T14:38:33.892Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Apps\\GitHub\\BookSamsys\\book-samsys-backend\\BookSamsys\\Program.cs",
+              "RelativeDocumentMoniker": "BookSamsys\\Program.cs",
+              "ToolTip": "C:\\Apps\\GitHub\\BookSamsys\\book-samsys-backend\\BookSamsys\\Program.cs",
+              "RelativeToolTip": "BookSamsys\\Program.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-07T16:51:18.921Z"
+              "WhenOpened": "2024-03-08T09:29:44.017Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -160,51 +184,26 @@
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "BookController.cs",
-              "DocumentMoniker": "C:\\Apps\\GitHub\\BookSamsys\\book-samsys-backend\\BookSamsys\\Controllers\\BookController.cs",
-              "RelativeDocumentMoniker": "BookSamsys\\Controllers\\BookController.cs",
-              "ToolTip": "C:\\Apps\\GitHub\\BookSamsys\\book-samsys-backend\\BookSamsys\\Controllers\\BookController.cs",
-              "RelativeToolTip": "BookSamsys\\Controllers\\BookController.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABwAAACHAAAA",
+              "Title": "BookSamsys.csproj",
+              "DocumentMoniker": "C:\\Apps\\GitHub\\BookSamsys\\book-samsys-backend\\BookSamsys\\BookSamsys.csproj",
+              "RelativeDocumentMoniker": "BookSamsys\\BookSamsys.csproj",
+              "ToolTip": "C:\\Apps\\GitHub\\BookSamsys\\book-samsys-backend\\BookSamsys\\BookSamsys.csproj",
+              "RelativeToolTip": "BookSamsys\\BookSamsys.csproj",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAANAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2024-03-14T11:05:02.511Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "IBookRepository.cs",
+              "DocumentMoniker": "C:\\Apps\\GitHub\\BookSamsys\\book-samsys-backend\\BookSamsys.Infrastructure\\Interfaces\\Books\\IBookRepository.cs",
+              "RelativeDocumentMoniker": "BookSamsys.Infrastructure\\Interfaces\\Books\\IBookRepository.cs",
+              "ToolTip": "C:\\Apps\\GitHub\\BookSamsys\\book-samsys-backend\\BookSamsys.Infrastructure\\Interfaces\\Books\\IBookRepository.cs",
+              "RelativeToolTip": "BookSamsys.Infrastructure\\Interfaces\\Books\\IBookRepository.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAFAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-07T16:48:24.642Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "appsettings.json",
-              "DocumentMoniker": "C:\\Apps\\GitHub\\BookSamsys\\book-samsys-backend\\BookSamsys\\appsettings.json",
-              "RelativeDocumentMoniker": "BookSamsys\\appsettings.json",
-              "ToolTip": "C:\\Apps\\GitHub\\BookSamsys\\book-samsys-backend\\BookSamsys\\appsettings.json",
-              "RelativeToolTip": "BookSamsys\\appsettings.json",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2024-03-14T16:02:39.047Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "BookSamsys.http",
-              "DocumentMoniker": "C:\\Apps\\GitHub\\BookSamsys\\book-samsys-backend\\BookSamsys\\BookSamsys.http",
-              "RelativeDocumentMoniker": "BookSamsys\\BookSamsys.http",
-              "ToolTip": "C:\\Apps\\GitHub\\BookSamsys\\book-samsys-backend\\BookSamsys\\BookSamsys.http",
-              "RelativeToolTip": "BookSamsys\\BookSamsys.http",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAIAAAANAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003502|",
-              "WhenOpened": "2024-03-12T14:38:33.892Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Apps\\GitHub\\BookSamsys\\book-samsys-backend\\BookSamsys\\Program.cs",
-              "RelativeDocumentMoniker": "BookSamsys\\Program.cs",
-              "ToolTip": "C:\\Apps\\GitHub\\BookSamsys\\book-samsys-backend\\BookSamsys\\Program.cs",
-              "RelativeToolTip": "BookSamsys\\Program.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAxAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-08T09:29:44.017Z"
+              "WhenOpened": "2024-03-07T16:51:18.921Z"
             },
             {
               "$type": "Document",
@@ -348,8 +347,7 @@
               "RelativeToolTip": "BookSamsys.BLL\\BookSamsys.BLL.csproj",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2024-03-11T10:03:32.704Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-03-11T10:03:32.704Z"
             },
             {
               "$type": "Document",

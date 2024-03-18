@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("BookSamsys.BLL")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+10c4d7e815a015af50c2a65e5e1215d37a16e28e")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+1f628dd5bb18ad8158bfb873da20433f4b177a68")]
 [assembly: System.Reflection.AssemblyProductAttribute("BookSamsys.BLL")]
 [assembly: System.Reflection.AssemblyTitleAttribute("BookSamsys.BLL")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

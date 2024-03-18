@@ -19,7 +19,9 @@ export function TableAxios(){
             setBooks(data)
         })
     }*/
-
+    const handleEditClick = () => {
+        // some action
+    }
     const getBooks = async() => {
         try{
             const response = await axios.get("https://localhost:7063/api/book"); //10.0.2.2
@@ -53,8 +55,14 @@ export function TableAxios(){
 
     //Definir as colunas
     const columns = [
-        
-       {
+        { label: "ID", name: "id", editable: false },
+        { label: "ISBN", name: "isbn" },
+        { label: "Nome", name: "nome" },
+        { label: "Autor", name: 'autor', },
+        { label: "Preço", name: "preco", }
+    
+    ]
+       /*{
             name: "id",
             label: "ID"
         },
@@ -78,7 +86,7 @@ export function TableAxios(){
             name: "userId",
             label: "UserID"
         },
-        /*{
+        {
             name: "id",
             label: "ID"
         },
@@ -90,13 +98,14 @@ export function TableAxios(){
             name: "body",
             label: "Mensagem"
         }*/
-    ]
+    
     //Mostrar a datatable
     return(
         <MUIDataTable
         title={"Listagem de livros"}
         data={books}
         columns = {columns}
+        
         />
     )
 }
