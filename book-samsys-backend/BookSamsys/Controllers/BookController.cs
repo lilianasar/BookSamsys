@@ -32,7 +32,7 @@ namespace BookSamsys.Controllers
         [HttpGet("{id}")]
         public async Task<ActionResult<BookDTO>> GetById(int id) {
             var responseBookDTOGetById = await _bookService.GetById(id);
-            return responseBookDTOGetById.Success == false ? BadRequest(responseBookDTOGetById.Message) : Ok(responseBookDTOGetById);
+            return responseBookDTOGetById.Success == false ? BadRequest(responseBookDTOGetById.Message) : Ok(responseBookDTOGetById.Obj);
         }
 
         [HttpPost]
@@ -40,19 +40,19 @@ namespace BookSamsys.Controllers
             //var responseAvailable = await _bookService.AvailabilityIsbn(bookPostDTO.Isbn);
             //var responseValid = await _bookService.ValidatePrice(bookPostDTO.Preco);
             var responseBookDTOCreated = await _bookService.Create(bookPostDTO);
-            return responseBookDTOCreated.Success == false ? BadRequest(responseBookDTOCreated.Message) : Ok(responseBookDTOCreated);
+            return responseBookDTOCreated.Success == false ? BadRequest(responseBookDTOCreated.Message) : Ok(responseBookDTOCreated.Message);
         }
         
         [HttpPut]
         public async Task<ActionResult> Update(BookDTO bookDTO) {
             var responseBookDTOUpdated = await _bookService.Update(bookDTO);
-            return responseBookDTOUpdated.Success == false ? BadRequest(responseBookDTOUpdated.Message) : Ok(responseBookDTOUpdated); ;
+            return responseBookDTOUpdated.Success == false ? BadRequest(responseBookDTOUpdated.Message) : Ok(responseBookDTOUpdated.Message); ;
         }
 
         [HttpDelete]
         public async Task<ActionResult<BookDTO>> Delete(int id) {
             var responseBookDTODeleted = await _bookService.Delete(id);
-            return responseBookDTODeleted.Success == false ? BadRequest(responseBookDTODeleted.Message) : Ok(responseBookDTODeleted);
+            return responseBookDTODeleted.Success == false ? BadRequest(responseBookDTODeleted.Message) : Ok(responseBookDTODeleted.Message);
         }
     }
 

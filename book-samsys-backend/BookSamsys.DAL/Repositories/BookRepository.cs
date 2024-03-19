@@ -56,6 +56,17 @@ namespace BookSamsys.DAL.Repositories
             return !isbnAvailable;
         }
 
+        public async Task<bool> RepeatedData(string isbn, string nome, string autor, decimal preco) {
+            //verifica se existe um isbn igual já atribuido - se corresponder, false
+            var dataRepeated = await _context.Livros.Where(x => x.Isbn == isbn)
+                                                    .Where(x => x.Nome == nome)
+                                                    .Where(x => x.Autor == autor)
+                                                    .Where(x => x.Preco == preco)
+                                                    .AnyAsync();
+
+            return dataRepeated;
+        }
+
         /*public Task<bool> ValidatePrice(decimal preco) {
             //verifica se o preço é negativo
             var priceValidate = preco < 0;

@@ -10,13 +10,13 @@ namespace BookSamsys.Infrastructure.Entities {
     public class Book {
         public int Id { get; set; }
 
-        [Required(ErrorMessage = "O Isbn é necessário")]
+        [Required]//(ErrorMessage = "O Isbn é necessário")]
         public required string Isbn { get; set; }
 
-        [Required(ErrorMessage = "O Nome é necessário")]
+        [Required]//(ErrorMessage = "O Nome é necessário")]
         public required string Nome { get; set; }
 
-        [Required(ErrorMessage = "O Autor é necessário")]
+        [Required]//(ErrorMessage = "O Autor é necessário")]
         public required string Autor { get; set; }
 
         [Column(TypeName = "decimal(18,2)")]

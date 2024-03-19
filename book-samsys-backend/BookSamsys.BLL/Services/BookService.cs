@@ -76,6 +76,11 @@ namespace BookSamsys.BLL.Services
                         return response;
                     }
                 }
+                if (bookPostDTO.Isbn == "" || bookPostDTO.Nome == "" || bookPostDTO.Autor == "") {
+                    response.Success = false;
+                    response.Message = "Preencha todos os campos.";
+                    return response;
+                }
                 /*if(bookCreated == null) {
                     response.Success = false;
                     response.Message = "Não foi possível criar o livro.";
@@ -113,6 +118,18 @@ namespace BookSamsys.BLL.Services
                         return response;
                     }
                 }
+                if (book.Isbn == "" || book.Nome == "" || book.Autor == "" ) {
+                    response.Success = false;
+                    response.Message = "Preencha todos os campos.";
+                    return response;
+                }
+                var RepeatedData = await _repository.RepeatedData(book.Isbn, book.Nome, book.Autor, book.Preco);
+                if(RepeatedData == true) {
+                    response.Success = false;
+                    response.Message = "Os dados não podem ser repetidos.";
+                    return response;
+                }
+
                 //update
                 var bookUpdated = await _repository.Update(book);
                 if (bookUpdated == null) {
