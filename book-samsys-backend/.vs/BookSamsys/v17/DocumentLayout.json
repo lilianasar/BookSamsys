@@ -3,7 +3,7 @@
   "WorkspaceRootPath": "C:\\Apps\\GitHub\\BookSamsys\\book-samsys-backend\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{6A945BA9-9796-4A3F-9C40-6C85A5670E52}|BookSamsys.BLL\\BookSamsys.BLL.csproj|C:\\Apps\\GitHub\\BookSamsys\\book-samsys-backend\\booksamsys.bll\\services\\bookservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{6A945BA9-9796-4A3F-9C40-6C85A5670E52}|BookSamsys.BLL\\BookSamsys.BLL.csproj|c:\\apps\\github\\booksamsys\\book-samsys-backend\\booksamsys.bll\\services\\bookservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{6A945BA9-9796-4A3F-9C40-6C85A5670E52}|BookSamsys.BLL\\BookSamsys.BLL.csproj|solutionrelative:booksamsys.bll\\services\\bookservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
@@ -31,16 +31,12 @@
       "RelativeMoniker": "D:0:0:{E6165831-12E9-4E9D-AD96-EBE5503E5E68}|BookSamsys.Infrastructure\\BookSamsys.Infrastructure.csproj|solutionrelative:booksamsys.infrastructure\\dtos\\bookdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{AE46DBFC-5C0B-4911-B8FE-AA01A821F498}|BookSamsys.DAL\\BookSamsys.DAL.csproj|c:\\apps\\github\\booksamsys\\book-samsys-backend\\booksamsys.dal\\booksamsys.dal.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "AbsoluteMoniker": "D:0:0:{AE46DBFC-5C0B-4911-B8FE-AA01A821F498}|BookSamsys.DAL\\BookSamsys.DAL.csproj|C:\\Apps\\GitHub\\BookSamsys\\book-samsys-backend\\booksamsys.dal\\booksamsys.dal.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
       "RelativeMoniker": "D:0:0:{AE46DBFC-5C0B-4911-B8FE-AA01A821F498}|BookSamsys.DAL\\BookSamsys.DAL.csproj|solutionrelative:booksamsys.dal\\booksamsys.dal.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
     },
     {
       "AbsoluteMoniker": "D:0:0:{E6165831-12E9-4E9D-AD96-EBE5503E5E68}|BookSamsys.Infrastructure\\BookSamsys.Infrastructure.csproj|C:\\Apps\\GitHub\\BookSamsys\\book-samsys-backend\\booksamsys.infrastructure\\dtos\\messaginghelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{E6165831-12E9-4E9D-AD96-EBE5503E5E68}|BookSamsys.Infrastructure\\BookSamsys.Infrastructure.csproj|solutionrelative:booksamsys.infrastructure\\dtos\\messaginghelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Apps\\GitHub\\BookSamsys\\book-samsys-backend\\BookSamsys.DAL\\Migrations\\20240319162857_Initial.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:BookSamsys.DAL\\Migrations\\20240319162857_Initial.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{E6165831-12E9-4E9D-AD96-EBE5503E5E68}|BookSamsys.Infrastructure\\BookSamsys.Infrastructure.csproj|C:\\Apps\\GitHub\\BookSamsys\\book-samsys-backend\\booksamsys.infrastructure\\entities\\author.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -51,11 +47,11 @@
       "RelativeMoniker": "D:0:0:{E6165831-12E9-4E9D-AD96-EBE5503E5E68}|BookSamsys.Infrastructure\\BookSamsys.Infrastructure.csproj|solutionrelative:booksamsys.infrastructure\\entities\\book.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E6165831-12E9-4E9D-AD96-EBE5503E5E68}|BookSamsys.Infrastructure\\BookSamsys.Infrastructure.csproj|c:\\apps\\github\\booksamsys\\book-samsys-backend\\booksamsys.infrastructure\\booksamsys.infrastructure.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "AbsoluteMoniker": "D:0:0:{E6165831-12E9-4E9D-AD96-EBE5503E5E68}|BookSamsys.Infrastructure\\BookSamsys.Infrastructure.csproj|C:\\Apps\\GitHub\\BookSamsys\\book-samsys-backend\\booksamsys.infrastructure\\booksamsys.infrastructure.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
       "RelativeMoniker": "D:0:0:{E6165831-12E9-4E9D-AD96-EBE5503E5E68}|BookSamsys.Infrastructure\\BookSamsys.Infrastructure.csproj|solutionrelative:booksamsys.infrastructure\\booksamsys.infrastructure.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{5D49810A-C8B1-45C2-8DBE-81D26CA907D9}|BookSamsys\\BookSamsys.csproj|c:\\apps\\github\\booksamsys\\book-samsys-backend\\booksamsys\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{5D49810A-C8B1-45C2-8DBE-81D26CA907D9}|BookSamsys\\BookSamsys.csproj|C:\\Apps\\GitHub\\BookSamsys\\book-samsys-backend\\booksamsys\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{5D49810A-C8B1-45C2-8DBE-81D26CA907D9}|BookSamsys\\BookSamsys.csproj|solutionrelative:booksamsys\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
@@ -89,6 +85,10 @@
     {
       "AbsoluteMoniker": "D:0:0:{AE46DBFC-5C0B-4911-B8FE-AA01A821F498}|BookSamsys.DAL\\BookSamsys.DAL.csproj|C:\\Apps\\GitHub\\BookSamsys\\book-samsys-backend\\booksamsys.dal\\.filenesting.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
       "RelativeMoniker": "D:0:0:{AE46DBFC-5C0B-4911-B8FE-AA01A821F498}|BookSamsys.DAL\\BookSamsys.DAL.csproj|solutionrelative:booksamsys.dal\\.filenesting.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AE46DBFC-5C0B-4911-B8FE-AA01A821F498}|BookSamsys.DAL\\BookSamsys.DAL.csproj|C:\\Apps\\GitHub\\BookSamsys\\book-samsys-backend\\BookSamsys.DAL\\Migrations\\20240319162857_Initial.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AE46DBFC-5C0B-4911-B8FE-AA01A821F498}|BookSamsys.DAL\\BookSamsys.DAL.csproj|solutionrelative:BookSamsys.DAL\\Migrations\\20240319162857_Initial.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -136,7 +136,7 @@
               "RelativeDocumentMoniker": "BookSamsys.BLL\\Services\\BookService.cs",
               "ToolTip": "C:\\Apps\\GitHub\\BookSamsys\\book-samsys-backend\\BookSamsys.BLL\\Services\\BookService.cs",
               "RelativeToolTip": "BookSamsys.BLL\\Services\\BookService.cs",
-              "ViewState": "AQIAACkAAAAAAAAAAAAiwHgAAABLAAAA",
+              "ViewState": "AQIAACEAAAAAAAAAAAAcwC8AAAARAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-03-07T12:47:48.91Z",
               "EditorCaption": ""
@@ -151,8 +151,7 @@
               "RelativeToolTip": "BookSamsys.Infrastructure\\DTOs\\BookDTO.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAABYAAAAKAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-08T10:33:08.097Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-03-08T10:33:08.097Z"
             },
             {
               "$type": "Document",
@@ -164,8 +163,7 @@
               "RelativeToolTip": "BookSamsys.DAL\\Repositories\\BookRepository.cs",
               "ViewState": "AQIAACkAAAAAAAAAAAA9wEEAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-07T14:44:33.961Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-03-07T14:44:33.961Z"
             },
             {
               "$type": "Document",
@@ -177,8 +175,7 @@
               "RelativeToolTip": "BookSamsys.Infrastructure\\DTOs\\MessagingHelper.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAuwAsAAAARAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-12T11:18:32.91Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-03-12T11:18:32.91Z"
             },
             {
               "$type": "Document",
@@ -190,8 +187,7 @@
               "RelativeToolTip": "BookSamsys.Infrastructure\\Interfaces\\Books\\IBookService.cs",
               "ViewState": "AQIAAAMAAAAAAAAAAAAAABEAAAAmAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-08T10:28:43.808Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-03-08T10:28:43.808Z"
             },
             {
               "$type": "Document",
@@ -203,8 +199,7 @@
               "RelativeToolTip": "BookSamsys.Infrastructure\\Interfaces\\Books\\IBookRepository.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAABIAAABXAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-07T16:51:18.921Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-03-07T16:51:18.921Z"
             },
             {
               "$type": "Document",
@@ -216,8 +211,7 @@
               "RelativeToolTip": "BookSamsys.Infrastructure\\DTOs\\BookPostDTO.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAIAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-08T15:19:53.787Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-03-08T15:19:53.787Z"
             },
             {
               "$type": "Document",
@@ -229,12 +223,11 @@
               "RelativeToolTip": "BookSamsys\\Controllers\\BookController.cs",
               "ViewState": "AQIAABYAAAAAAAAAAAAQwBwAAACEAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-07T16:48:24.642Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-03-07T16:48:24.642Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 10,
               "Title": "Book.cs",
               "DocumentMoniker": "C:\\Apps\\GitHub\\BookSamsys\\book-samsys-backend\\BookSamsys.Infrastructure\\Entities\\Book.cs",
               "RelativeDocumentMoniker": "BookSamsys.Infrastructure\\Entities\\Book.cs",
@@ -242,8 +235,7 @@
               "RelativeToolTip": "BookSamsys.Infrastructure\\Entities\\Book.cs",
               "ViewState": "AQIAAAYAAAAAAAAAAAAAABUAAAAJAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-08T10:33:01.529Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-03-08T10:33:01.529Z"
             },
             {
               "$type": "Document",
@@ -255,12 +247,11 @@
               "RelativeToolTip": "BookSamsys.DAL\\BookSamsys.DAL.csproj",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2024-03-19T16:49:00.554Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-03-19T16:49:00.554Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 13,
               "Title": "BookSamsys.BLL.csproj",
               "DocumentMoniker": "C:\\Apps\\GitHub\\BookSamsys\\book-samsys-backend\\BookSamsys.BLL\\BookSamsys.BLL.csproj",
               "RelativeDocumentMoniker": "BookSamsys.BLL\\BookSamsys.BLL.csproj",
@@ -268,12 +259,11 @@
               "RelativeToolTip": "BookSamsys.BLL\\BookSamsys.BLL.csproj",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2024-03-11T10:03:32.704Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-03-11T10:03:32.704Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 9,
               "Title": "Author.cs",
               "DocumentMoniker": "C:\\Apps\\GitHub\\BookSamsys\\book-samsys-backend\\BookSamsys.Infrastructure\\Entities\\Author.cs",
               "RelativeDocumentMoniker": "BookSamsys.Infrastructure\\Entities\\Author.cs",
@@ -281,12 +271,11 @@
               "RelativeToolTip": "BookSamsys.Infrastructure\\Entities\\Author.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAhAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-14T09:33:25.865Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-03-14T09:33:25.865Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 21,
               "Title": "20240319162857_Initial.cs",
               "DocumentMoniker": "C:\\Apps\\GitHub\\BookSamsys\\book-samsys-backend\\BookSamsys.DAL\\Migrations\\20240319162857_Initial.cs",
               "RelativeDocumentMoniker": "BookSamsys.DAL\\Migrations\\20240319162857_Initial.cs",
@@ -294,12 +283,11 @@
               "RelativeToolTip": "BookSamsys.DAL\\Migrations\\20240319162857_Initial.cs",
               "ViewState": "AQIAAA0AAAAAAAAAAAAQwAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-19T16:28:58.1Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-03-19T16:28:58.1Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 15,
               "Title": "BookSamsys.http",
               "DocumentMoniker": "C:\\Apps\\GitHub\\BookSamsys\\book-samsys-backend\\BookSamsys\\BookSamsys.http",
               "RelativeDocumentMoniker": "BookSamsys\\BookSamsys.http",
@@ -311,7 +299,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
+              "DocumentIndex": 16,
               "Title": "appsettings.json",
               "DocumentMoniker": "C:\\Apps\\GitHub\\BookSamsys\\book-samsys-backend\\BookSamsys\\appsettings.json",
               "RelativeDocumentMoniker": "BookSamsys\\appsettings.json",
@@ -323,7 +311,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 12,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Apps\\GitHub\\BookSamsys\\book-samsys-backend\\BookSamsys\\Program.cs",
               "RelativeDocumentMoniker": "BookSamsys\\Program.cs",
@@ -331,12 +319,11 @@
               "RelativeToolTip": "BookSamsys\\Program.cs",
               "ViewState": "AQIAACEAAAAAAAAAAAAAABEAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-08T09:29:44.017Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-03-08T09:29:44.017Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 11,
               "Title": "BookSamsys.Infrastructure",
               "DocumentMoniker": "C:\\Apps\\GitHub\\BookSamsys\\book-samsys-backend\\BookSamsys.Infrastructure\\BookSamsys.Infrastructure.csproj",
               "RelativeDocumentMoniker": "BookSamsys.Infrastructure\\BookSamsys.Infrastructure.csproj",
@@ -344,12 +331,11 @@
               "RelativeToolTip": "BookSamsys.Infrastructure\\BookSamsys.Infrastructure.csproj",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2024-03-19T14:52:38.87Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-03-19T14:52:38.87Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 14,
               "Title": "BookSamsys.csproj",
               "DocumentMoniker": "C:\\Apps\\GitHub\\BookSamsys\\book-samsys-backend\\BookSamsys\\BookSamsys.csproj",
               "RelativeDocumentMoniker": "BookSamsys\\BookSamsys.csproj",
@@ -357,12 +343,11 @@
               "RelativeToolTip": "BookSamsys\\BookSamsys.csproj",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAANAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2024-03-14T11:05:02.511Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-03-14T11:05:02.511Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 18,
+              "DocumentIndex": 17,
               "Title": "BookContext.cs",
               "DocumentMoniker": "C:\\Apps\\GitHub\\BookSamsys\\book-samsys-backend\\BookSamsys.DAL\\Context\\BookContext.cs",
               "RelativeDocumentMoniker": "BookSamsys.DAL\\Context\\BookContext.cs",
@@ -374,7 +359,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 19,
+              "DocumentIndex": 18,
               "Title": "EntityToDTOMappingProfile.cs",
               "DocumentMoniker": "C:\\Apps\\GitHub\\BookSamsys\\book-samsys-backend\\BookSamsys.Infrastructure\\Mappings\\EntityToDTOMappingProfile.cs",
               "RelativeDocumentMoniker": "BookSamsys.Infrastructure\\Mappings\\EntityToDTOMappingProfile.cs",
@@ -386,7 +371,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 20,
+              "DocumentIndex": 19,
               "Title": "20240308114028_InitialCreate.cs",
               "DocumentMoniker": "C:\\Apps\\GitHub\\BookSamsys\\book-samsys-backend\\BookSamsys.DAL\\Migrations\\20240308114028_InitialCreate.cs",
               "RelativeDocumentMoniker": "BookSamsys.DAL\\Migrations\\20240308114028_InitialCreate.cs",
@@ -398,7 +383,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 21,
+              "DocumentIndex": 20,
               "Title": ".filenesting.json",
               "DocumentMoniker": "C:\\Apps\\GitHub\\BookSamsys\\book-samsys-backend\\BookSamsys.DAL\\.filenesting.json",
               "RelativeDocumentMoniker": "BookSamsys.DAL\\.filenesting.json",

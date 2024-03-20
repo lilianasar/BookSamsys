@@ -1,6 +1,6 @@
-import { Modal, bottomNavigationActionClasses } from "@mui/material";
+//import { Modal, bottomNavigationActionClasses } from "@mui/material";
 import React, { Component } from "react";
-import { unstable_useViewTransitionState } from "react-router-dom";
+//import { unstable_useViewTransitionState } from "react-router-dom";
 import { variables } from "../Variables";
 
 export class Book extends Component {
@@ -16,14 +16,90 @@ export class Book extends Component {
       nome: "",
       autor: "",
       preco: 0,
+
+      IdFilter:"",
+      IsbnFilter:"",
+      NomeFilter:"",
+      AutorFilter:"",
+      PrecoFilter: "",
+      booksWithoutFilter:[]
     };
   }
+  
+  FilterFn(){
+    var IdFilter=this.state.IdFilter;
+    var IsbnFilter = this.state.IsbnFilter;
+    var NomeFilter = this.state.NomeFilter;
+    var AutorFilter = this.state.AutorFilter;
+    var PrecoFilter = this.state.PrecoFilter;
 
+    var filteredData=this.state.booksWithoutFilter.filter(
+        function(el){
+            return el.id.toString().toLowerCase().includes(
+              IdFilter.toString().trim().toLowerCase()
+            )&&
+            el.isbn.toString().toLowerCase().includes(
+              IsbnFilter.toString().trim().toLowerCase()
+            )&&
+            el.nome.toString().toLowerCase().includes(
+              NomeFilter.toString().trim().toLowerCase()
+            )&&
+            el.autor.toString().toLowerCase().includes(
+              AutorFilter.toString().trim().toLowerCase()
+            )&&
+            el.preco.toString().toLowerCase().includes(
+              PrecoFilter.toString().trim().toLowerCase()
+            )
+        }
+    );
+
+    this.setState({books:filteredData});
+
+}
+
+sortResult(prop,asc){
+  var sortedData=this.state.booksWithoutFilter.sort(function(a,b){
+      if(asc){
+          return (a[prop]>b[prop])?1:((a[prop]<b[prop])?-1:0);
+      }
+      else{
+          return (b[prop]>a[prop])?1:((b[prop]<a[prop])?-1:0);
+      }
+  });
+
+  this.setState({books:sortedData});
+}
+
+changeIdFilter = (e)=>{
+  this.state.IdFilter=e.target.value;
+  this.FilterFn();
+}
+
+changeIsbnFilter = (e)=>{
+  this.state.IsbnFilter=e.target.value;
+  this.FilterFn();
+}
+
+changeNomeFilter = (e)=>{
+  this.state.NomeFilter=e.target.value;
+  this.FilterFn();
+}
+  
+changeAutorFilter = (e)=>{
+  this.state.AutorFilter=e.target.value;
+  this.FilterFn();
+}
+    
+changePrecoFilter = (e)=>{
+  this.state.PrecoFilter=e.target.value;
+  this.FilterFn();
+}     
+     
   refreshList() {
     fetch(variables.API_URL + "book")
       .then((response) => response.json())
       .then((data) => {
-        this.setState({ books: data });
+        this.setState({ books: data, booksWithoutFilter: data });
       });
   }
 
@@ -160,24 +236,142 @@ export class Book extends Component {
 
         <table className="table table-striped">
           <thead>
-            <tr>
+          <tr>
+            <th>
+                <div className="d-flex flex-row">
+
+                <input className="form-control"
+                onChange={this.changeIdFilter}
+                placeholder="Filtro"/>
+
+                <button type="button" className="btn btn-light"
+                onClick={()=>this.sortResult('id',true)}>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" className="bi bi-arrow-up-square-fill" viewBox="0 0 16 16">
+                    <path d="M2 16a2 2 0 0 1-2-2V2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H2zm6.5-4.5V5.707l2.146 2.147a.5.5 0 0 0 .708-.708l-3-3a.5.5 0 0 0-.708 0l-3 3a.5.5 0 1 0 .708.708L7.5 5.707V11.5a.5.5 0 0 0 1 0z"/>
+                    </svg>
+                </button>
+
+                <button type="button" className="btn btn-light"
+                onClick={()=>this.sortResult('id',false)}>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" className="bi bi-arrow-down-square-fill" viewBox="0 0 16 16">
+                    <path d="M2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2zm6.5 4.5v5.793l2.146-2.147a.5.5 0 0 1 .708.708l-3 3a.5.5 0 0 1-.708 0l-3-3a.5.5 0 1 1 .708-.708L7.5 10.293V4.5a.5.5 0 0 1 1 0z"/>
+                    </svg>
+                </button>
+                </div>
+                ID
+            </th>
+            <th>
+              <div className="d-flex flex-row">
+              <input className="form-control"
+                  onChange={this.changeIsbnFilter}
+                  placeholder="Filtro"/>
+
+                  <button type="button" className="btn btn-light"
+                  onClick={()=>this.sortResult('isbn',true)}>
+                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" className="bi bi-arrow-up-square-fill" viewBox="0 0 16 16">
+                      <path d="M2 16a2 2 0 0 1-2-2V2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H2zm6.5-4.5V5.707l2.146 2.147a.5.5 0 0 0 .708-.708l-3-3a.5.5 0 0 0-.708 0l-3 3a.5.5 0 1 0 .708.708L7.5 5.707V11.5a.5.5 0 0 0 1 0z"/>
+                      </svg>
+                  </button>
+
+                  <button type="button" className="btn btn-light"
+                  onClick={()=>this.sortResult('isbn',false)}>
+                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" className="bi bi-arrow-down-square-fill" viewBox="0 0 16 16">
+                      <path d="M2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2zm6.5 4.5v5.793l2.146-2.147a.5.5 0 0 1 .708.708l-3 3a.5.5 0 0 1-.708 0l-3-3a.5.5 0 1 1 .708-.708L7.5 10.293V4.5a.5.5 0 0 1 1 0z"/>
+                      </svg>
+                  </button>
+                  </div>
+                  ISBN
+          
+            </th>
+            <th>
+              <div className="d-flex flex-row">
+              <input className="form-control"
+                  onChange={this.changeNomeFilter}
+                  placeholder="Filtro"/>
+
+                  <button type="button" className="btn btn-light"
+                  onClick={()=>this.sortResult('nome',true)}>
+                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" className="bi bi-arrow-up-square-fill" viewBox="0 0 16 16">
+                      <path d="M2 16a2 2 0 0 1-2-2V2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H2zm6.5-4.5V5.707l2.146 2.147a.5.5 0 0 0 .708-.708l-3-3a.5.5 0 0 0-.708 0l-3 3a.5.5 0 1 0 .708.708L7.5 5.707V11.5a.5.5 0 0 0 1 0z"/>
+                      </svg>
+                  </button>
+                  <button type="button" className="btn btn-light"
+                  onClick={()=>this.sortResult('nome',false)}>
+                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" className="bi bi-arrow-down-square-fill" viewBox="0 0 16 16">
+                      <path d="M2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2zm6.5 4.5v5.793l2.146-2.147a.5.5 0 0 1 .708.708l-3 3a.5.5 0 0 1-.708 0l-3-3a.5.5 0 1 1 .708-.708L7.5 10.293V4.5a.5.5 0 0 1 1 0z"/>
+                      </svg>
+                  </button>
+                  </div>
+                  Nome
+          
+            </th>
+            <th>
+              <div className="d-flex flex-row">
+              <input className="form-control"
+                  onChange={this.changeAutorFilter}
+                  placeholder="Filtro"/>
+
+                  <button type="button" className="btn btn-light"
+                  onClick={()=>this.sortResult('autor',true)}>
+                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" className="bi bi-arrow-up-square-fill" viewBox="0 0 16 16">
+                      <path d="M2 16a2 2 0 0 1-2-2V2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H2zm6.5-4.5V5.707l2.146 2.147a.5.5 0 0 0 .708-.708l-3-3a.5.5 0 0 0-.708 0l-3 3a.5.5 0 1 0 .708.708L7.5 5.707V11.5a.5.5 0 0 0 1 0z"/>
+                      </svg>
+                  </button>
+                  <button type="button" className="btn btn-light"
+                  onClick={()=>this.sortResult('autor',false)}>
+                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" className="bi bi-arrow-down-square-fill" viewBox="0 0 16 16">
+                      <path d="M2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2zm6.5 4.5v5.793l2.146-2.147a.5.5 0 0 1 .708.708l-3 3a.5.5 0 0 1-.708 0l-3-3a.5.5 0 1 1 .708-.708L7.5 10.293V4.5a.5.5 0 0 1 1 0z"/>
+                      </svg>
+                  </button>
+
+                  </div>
+                  Autor
+          
+            </th>
+            <th>
+              <div className="d-flex flex-row">
+              <input className="form-control"
+                  onChange={this.changePrecoFilter}
+                  placeholder="Filtro"/>
+
+                  <button type="button" className="btn btn-light"
+                  onClick={()=>this.sortResult('preco',true)}>
+                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" className="bi bi-arrow-up-square-fill" viewBox="0 0 16 16">
+                      <path d="M2 16a2 2 0 0 1-2-2V2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H2zm6.5-4.5V5.707l2.146 2.147a.5.5 0 0 0 .708-.708l-3-3a.5.5 0 0 0-.708 0l-3 3a.5.5 0 1 0 .708.708L7.5 5.707V11.5a.5.5 0 0 0 1 0z"/>
+                      </svg>
+                  </button>
+                  <button type="button" className="btn btn-light"
+                  onClick={()=>this.sortResult('preco',false)}>
+                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" className="bi bi-arrow-down-square-fill" viewBox="0 0 16 16">
+                      <path d="M2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2zm6.5 4.5v5.793l2.146-2.147a.5.5 0 0 1 .708.708l-3 3a.5.5 0 0 1-.708 0l-3-3a.5.5 0 1 1 .708-.708L7.5 10.293V4.5a.5.5 0 0 1 1 0z"/>
+                      </svg>
+                  </button>
+
+                  </div>
+                  Preço
+            </th>
+            <th>
+                Options
+            </th>
+        </tr>            
+       {/* <tr>
               <th>ID</th>
               <th>ISBN</th>
               <th>Nome</th>
               <th>Autor</th>
               <th>Preço</th>
               <th>Opções</th>
-            </tr>
+            </tr>*/}
           </thead>
           <tbody>
             {books.map((book) => (
               <tr key={book.id}>
-                <td>{book.id}</td>
+                <td width="15%">{book.id}</td>
                 <td>{book.isbn}</td>
                 <td>{book.nome}</td>
                 <td>{book.autor}</td>
-                <td>{book.preco}</td>
-                <td>
+                <td width="15%">{book.preco}</td>
+                <td width="10%">
                   <button
                     type="button"
                     className="btn btn-light mr-1"
@@ -299,6 +493,9 @@ export class Book extends Component {
           </div>
         </div>
       </div>
+
+      
     );
   }
+  
 }
