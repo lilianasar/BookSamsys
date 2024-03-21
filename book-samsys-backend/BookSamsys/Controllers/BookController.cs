@@ -9,6 +9,7 @@ using Microsoft.AspNetCore.Http.HttpResults;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Server.IIS;
 using Microsoft.AspNetCore.Server.Kestrel.Core;
+using Microsoft.EntityFrameworkCore;
 using System.Reflection.Metadata.Ecma335;
 
 namespace BookSamsys.Controllers
@@ -18,15 +19,38 @@ namespace BookSamsys.Controllers
     public class BookController : ControllerBase {
 
         private readonly IBookService _bookService;
+        private readonly BookContext ? _context;
 
-        public BookController(IBookService bookService) {
+        public BookController(IBookService bookService, BookContext bookContext) {
             _bookService = bookService;
+            _context = bookContext;
         }
 
         [HttpGet]
         public async Task<ActionResult<IEnumerable<BookDTO>>> GetAll() {
             var responseBooksDTOGetAll = await _bookService.GetAll();
             return responseBooksDTOGetAll.Success == false ? BadRequest(responseBooksDTOGetAll.Message) : Ok(responseBooksDTOGetAll.Obj);
+        }
+
+        [HttpGet("page/{page}")]
+        public async Task<ActionResult<List<BookDTO>>> GetBooks(int page) {
+            if (_context.Livros == null) return NotFound();
+
+            var pageResults = 3f; //3 livros
+            var pageCount = Math.Ceiling(_context.Livros.Count() / pageResults);
+
+            var books = await _context.Livros
+                .Skip((page - 1) * (int)pageResults) //parse
+                .Take((int)pageResults)
+                .ToListAsync();
+
+            var response = new BookResponse {
+                Books = books,
+                CurrentPage = page,
+                Pages = (int)pageCount
+            };
+
+            return Ok(response);
         }
 
         [HttpGet("{id}")]

@@ -1,7 +1,28 @@
 //import { Modal, bottomNavigationActionClasses } from "@mui/material";
-import React, { Component } from "react";
+import React, { Component, useState, useEffect} from "react";
 //import { unstable_useViewTransitionState } from "react-router-dom";
 import { variables } from "../Variables";
+//import { Pagination } from "../components/Pagination";
+
+/*const MAX_ITEMS = 1;
+const MAX_LEFT = (MAX_ITEMS - 1) / 2;
+
+const Pagination = ({
+  limit,
+  total,
+  offset,
+  setOffset
+}) => {
+  const current = offset ? offset / limit + 1 : 1;
+  const pages = Math.ceil(total / limit);
+  const first = Math.max(current - MAX_LEFT, 1);
+  
+
+  function onPageChange(page) {
+    setOffset((page - 1) * limit);
+  }
+}*/
+
 
 export class Book extends Component {
   constructor(props) {
@@ -25,7 +46,31 @@ export class Book extends Component {
       booksWithoutFilter:[]
     };
   }
-  
+    
+  /* Pagination(){
+      const [currentPage, setCurrentPage] = useState(1);
+      const recordsPerPage = 5;
+      const lastIndex = currentPage * recordsPerPage;
+      const firstIndex = lastIndex - recordsPerPage;
+      const records = Book.books.Slice(firstIndex, lastIndex);
+      const npage = Math.ceil(Book.books.length / recordsPerPage);
+      const numbers = [...Array(npage + 1).keys()].slice(1)
+    
+    
+    function prePage(){
+    
+    }
+
+    function changeCPage(id){
+      
+    }
+
+    function nextPage(){
+    
+    }
+    this.Pagination();
+  }*/
+
   FilterFn(){
     var IdFilter=this.state.IdFilter;
     var IsbnFilter = this.state.IsbnFilter;
@@ -412,6 +457,68 @@ changePrecoFilter = (e)=>{
             ))}
           </tbody>
         </table>
+{/* 
+        <ul className="pagination">
+      <li>
+        <button
+          onClick={() => Pagination.onPageChange(Pagination.current - 1)}
+          disabled={Pagination.current === 1}
+        >
+          Anterior
+        </button>
+      </li>
+      {Array.from({ length: Math.min(MAX_ITEMS, Pagination.pages) })
+        .map((_, index) => index + Pagination.first)
+        .map((page) => (
+          <li key={page}>
+            <button
+              onClick={() => Pagination.onPageChange(page)}
+              className={
+                page === Pagination.current
+                  ? 'pagination__item--active'
+                  : null
+              }
+            >
+              {page}
+            </button>
+          </li>
+        ))}
+      <li>
+        <button
+          onClick={() => Pagination.onPageChange(Pagination.current + 1)}
+          disabled={Pagination.current === Pagination.pages}
+        >
+          Próxima
+        </button>
+      </li>
+    </ul>
+        {/*<nav>
+          <ul className='pagination'>
+            <li className='page-item'>
+              <a href='#' className='page-link'
+              onClick={Pagination.prePage}>Anterior</a>
+            </li>
+            <li className='page-item'>
+             1
+            </li>
+            {
+              Pagination.numbers.map((n, i) =>(
+                <li className='page-item' key={i}>
+                  <a href='#' className='page-item'
+                 onClick={Pagination.changeCPage(n)} >{n}</a>
+                </li>
+
+              ))
+            }
+            <li className='page-item'>
+              <a href='#' className='page-link'
+              onClick={Pagination.nextPage}>Próxima</a>
+            </li> 
+            
+          </ul>
+          </nav>*/}
+
+
         <div
           className="modal fade"
           id="exampleModal"

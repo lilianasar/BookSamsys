@@ -112,5 +112,31 @@
         "StatusCode": 200
       }
     ]
+  },
+  {
+    "ContainingType": "BookSamsys.Controllers.BookController",
+    "Method": "GetBooks",
+    "RelativePath": "api/Book/page/{page}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "page",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.List\u00601[[BookSamsys.Infrastructure.DTOs.BookDTO, BookSamsys.Infrastructure, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
   }
 ]
