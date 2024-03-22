@@ -10,5 +10,6 @@ namespace BookSamsys.Infrastructure.DTOs {
         public List<Book> Books { get; set; } = new List<Book>();
         public int Pages { get; set; }
         public int CurrentPage {  get; set; }
+        public int Total { get; set; }
     }
 }

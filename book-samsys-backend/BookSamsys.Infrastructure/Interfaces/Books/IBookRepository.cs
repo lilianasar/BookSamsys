@@ -10,6 +10,7 @@ namespace BookSamsys.Infrastructure.Interfaces.Books
 {
     public interface IBookRepository
     {
+        Task<IEnumerable<Book>> GetAllPag(int pageNumber, int pageQuantity);
         Task<IEnumerable<Book>> GetAll();
         Task<Book> GetById(int id);
         Task<Book> Create(Book book);

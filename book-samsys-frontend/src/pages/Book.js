@@ -4,26 +4,6 @@ import React, { Component, useState, useEffect} from "react";
 import { variables } from "../Variables";
 //import { Pagination } from "../components/Pagination";
 
-/*const MAX_ITEMS = 1;
-const MAX_LEFT = (MAX_ITEMS - 1) / 2;
-
-const Pagination = ({
-  limit,
-  total,
-  offset,
-  setOffset
-}) => {
-  const current = offset ? offset / limit + 1 : 1;
-  const pages = Math.ceil(total / limit);
-  const first = Math.max(current - MAX_LEFT, 1);
-  
-
-  function onPageChange(page) {
-    setOffset((page - 1) * limit);
-  }
-}*/
-
-
 export class Book extends Component {
   constructor(props) {
     //chamar construtor da classe pai
@@ -46,30 +26,7 @@ export class Book extends Component {
       booksWithoutFilter:[]
     };
   }
-    
-  /* Pagination(){
-      const [currentPage, setCurrentPage] = useState(1);
-      const recordsPerPage = 5;
-      const lastIndex = currentPage * recordsPerPage;
-      const firstIndex = lastIndex - recordsPerPage;
-      const records = Book.books.Slice(firstIndex, lastIndex);
-      const npage = Math.ceil(Book.books.length / recordsPerPage);
-      const numbers = [...Array(npage + 1).keys()].slice(1)
-    
-    
-    function prePage(){
-    
-    }
-
-    function changeCPage(id){
-      
-    }
-
-    function nextPage(){
-    
-    }
-    this.Pagination();
-  }*/
+  
 
   FilterFn(){
     var IdFilter=this.state.IdFilter;
@@ -139,14 +96,29 @@ changePrecoFilter = (e)=>{
   this.state.PrecoFilter=e.target.value;
   this.FilterFn();
 }     
-     
+  
+  
   refreshList() {
-    fetch(variables.API_URL + "book")
+
+
+    fetch(variables.API_URL + "book/pg?pageNumber=0&pageQuantity=5")
       .then((response) => response.json())
       .then((data) => {
-        this.setState({ books: data, booksWithoutFilter: data });
+        this.setState({ books: data.obj, booksWithoutFilter: data });
+        
+        /*const total = data.headers["totalRows"];
+        const limit = data.headers["pageQuantity"];
+        const totalPages = Math.ceil(total / limit)
+        const arrayPages = [];
+        for(let i = 0; i<= totalPages-1; i++){
+          arrayPages.push(i);
+        } 
+
+        this.setState({ books: data.obj, booksWithoutFilter: data });
+      */
       });
   }
+
 
   componentDidMount() {
     this.refreshList();
@@ -457,6 +429,17 @@ changePrecoFilter = (e)=>{
             ))}
           </tbody>
         </table>
+
+      {/*  <ul className="pagination">
+      <li>
+        <button
+          onClick={() => onPageChange(Pagination.current - 1)}
+          disabled={current === 1}
+          >
+          Anterior
+        </button>
+      </li>
+  
 {/* 
         <ul className="pagination">
       <li>
@@ -491,32 +474,35 @@ changePrecoFilter = (e)=>{
           Próxima
         </button>
       </li>
-    </ul>
-        {/*<nav>
+            </ul>*/}
+        <nav>
           <ul className='pagination'>
             <li className='page-item'>
               <a href='#' className='page-link'
-              onClick={Pagination.prePage}>Anterior</a>
+              //onClick={}
+              >Anterior</a>
             </li>
             <li className='page-item'>
              1
             </li>
             {
-              Pagination.numbers.map((n, i) =>(
+              /*this.refreshList.setPages.map((n, i) =>(
                 <li className='page-item' key={i}>
                   <a href='#' className='page-item'
-                 onClick={Pagination.changeCPage(n)} >{n}</a>
+                 //onClick={} 
+                 >{n}</a>
                 </li>
 
-              ))
+              ))*/
             }
             <li className='page-item'>
               <a href='#' className='page-link'
-              onClick={Pagination.nextPage}>Próxima</a>
+              //onClick={}
+              >Próxima</a>
             </li> 
             
           </ul>
-          </nav>*/}
+          </nav>
 
 
         <div

@@ -18,10 +18,15 @@ namespace BookSamsys.DAL.Repositories
             _context = context;
         }
 
+        public async Task<IEnumerable<Book>> GetAllPag(int pageNumber, int pageQuantity) {
+            return await _context.Livros
+                .Skip((pageNumber) * pageQuantity)
+                .Take(pageQuantity)
+                .ToListAsync();
+        }
         public async Task<IEnumerable<Book>> GetAll() {
             return await _context.Livros.ToListAsync();
         }
-
         public async Task<Book> GetById(int id) {
             return await _context.Livros.AsNoTracking().FirstOrDefaultAsync(x => x.Id == id);
         }

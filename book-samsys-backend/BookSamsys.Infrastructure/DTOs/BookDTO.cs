@@ -22,6 +22,7 @@ namespace BookSamsys.Infrastructure.DTOs {
 
         //[Required]//(ErrorMessage = "O Preço é necessário")]
         public decimal Preco { get; set; } = decimal.Zero;
+
     }
 }
 

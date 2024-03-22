@@ -9,13 +9,7 @@ import {BrowserRouter, Routes, Route, NavLink} from 'react-router-dom';
 import { useState, useEffect} from 'react';
 //import Pagination from './components/Pagination';
 
-const LIMIT = 1;
-
 function App() {
-  const [info, setInfo] = useState({});
-  const [text, setText] = useState('');
-  const [offset, setOffset] = useState(0);
-  
   return (
     //<div className="App">
     //  {/*<TableBasic/>*/}
@@ -44,18 +38,15 @@ function App() {
           </ul>
         </nav>
 
-        <Routes>
+         <Routes>
           {/*<Route path='/home' Component={Home}/>*/}
-          <Route path='/' Component={Book} limit={LIMIT} offset={offset} setOffset={setOffset}/>
+          <Route path='/' Component={Book}/>
           {/*Adicionar mais componentes*/}
         </Routes>
+
         
     </div>
-  {/*<Book
-    limit={LIMIT}
-    offset={offset}
-    setOffset={setOffset}
-/>*/}
+
     </BrowserRouter>
 
     

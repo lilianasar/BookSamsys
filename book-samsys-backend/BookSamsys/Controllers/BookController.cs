@@ -19,25 +19,31 @@ namespace BookSamsys.Controllers
     public class BookController : ControllerBase {
 
         private readonly IBookService _bookService;
-        private readonly BookContext ? _context;
+        private readonly BookContext? _context;
 
         public BookController(IBookService bookService, BookContext bookContext) {
             _bookService = bookService;
             _context = bookContext;
         }
 
-        [HttpGet]
-        public async Task<ActionResult<IEnumerable<BookDTO>>> GetAll() {
-            var responseBooksDTOGetAll = await _bookService.GetAll();
-            return responseBooksDTOGetAll.Success == false ? BadRequest(responseBooksDTOGetAll.Message) : Ok(responseBooksDTOGetAll.Obj);
+        [HttpGet("pg")]
+        public async Task<ActionResult<IEnumerable<BookDTO>>> GetAllPag(int pageNumber, int pageQuantity) {
+            var responseBooksDTOGetAllPag = await _bookService.GetAllPag(pageNumber, pageQuantity);
+            return responseBooksDTOGetAllPag.Success == false ? BadRequest(responseBooksDTOGetAllPag.Message) : Ok(responseBooksDTOGetAllPag);
         }
 
-        [HttpGet("page/{page}")]
-        public async Task<ActionResult<List<BookDTO>>> GetBooks(int page) {
+        [HttpGet()]
+        public async Task<ActionResult<IEnumerable<BookDTO>>> GetAll() {
+            var responseBooksDTOGetAll = await _bookService.GetAll();
+            return responseBooksDTOGetAll.Success == false ? BadRequest(responseBooksDTOGetAll.Message) : Ok(responseBooksDTOGetAll);
+        }
+        /*[HttpGet("{page}")]
+        public async Task<ActionResult<List<BookDTO>>> GetAll(int page) {
             if (_context.Livros == null) return NotFound();
 
             var pageResults = 3f; //3 livros
             var pageCount = Math.Ceiling(_context.Livros.Count() / pageResults);
+            var totalCount = _context.Livros.Count();
 
             var books = await _context.Livros
                 .Skip((page - 1) * (int)pageResults) //parse
@@ -47,17 +53,18 @@ namespace BookSamsys.Controllers
             var response = new BookResponse {
                 Books = books,
                 CurrentPage = page,
-                Pages = (int)pageCount
+                Pages = (int)pageCount,
+                Total = (int)totalCount
             };
 
             return Ok(response);
-        }
+        }*/
 
-        [HttpGet("{id}")]
+        /*[HttpGet("{id}")]
         public async Task<ActionResult<BookDTO>> GetById(int id) {
             var responseBookDTOGetById = await _bookService.GetById(id);
             return responseBookDTOGetById.Success == false ? BadRequest(responseBookDTOGetById.Message) : Ok(responseBookDTOGetById.Obj);
-        }
+        }*/
 
         [HttpPost]
         public async Task<ActionResult<BookPostDTO>> Create(BookPostDTO bookPostDTO) {

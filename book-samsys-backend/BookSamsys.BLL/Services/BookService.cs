@@ -17,9 +17,34 @@ namespace BookSamsys.BLL.Services
             _mapper = mapper;
         }
 
-        public async Task<MessagingHelper<IEnumerable<BookDTO>>> GetAll() {
+        public async Task<MessagingHelper<IEnumerable<BookDTO>>> GetAllPag(int pageNumber, int pageQuantity) {
             MessagingHelper<IEnumerable<BookDTO>> response = new();
             try { 
+                var books = await _repository.GetAllPag(pageNumber, pageQuantity);
+                var get = await _repository.GetAll();
+                var total = get.Count();
+                var totalRows = get.Count();
+                if (books == null) {
+                    response.Success = false;
+                    response.Message = "Não foram encontrados livros.";
+                    return response;
+                }
+                response.Obj = _mapper.Map<IEnumerable<BookDTO>>(books);
+                response.Success = true;
+                response.Message = "Os livros existentes são os seguintes:";
+                response.pageQuantity = pageQuantity;
+                response.pageNumber = pageNumber;
+                response.totalRows = total;
+                return response;
+            } catch (Exception ex) {
+                response.Success = false;
+                response.Message = "Ocorreu um erro ao obter os livros. Erro: " + ex.Message;
+            }
+            return response;
+        }
+        public async Task<MessagingHelper<IEnumerable<BookDTO>>> GetAll() {
+            MessagingHelper<IEnumerable<BookDTO>> response = new();
+            try {
                 var books = await _repository.GetAll();
                 if (books == null) {
                     response.Success = false;
@@ -36,7 +61,6 @@ namespace BookSamsys.BLL.Services
             }
             return response;
         }
-
         public async Task<MessagingHelper<BookDTO>> GetById(int id) {
             MessagingHelper<BookDTO> response = new();
             try { 
