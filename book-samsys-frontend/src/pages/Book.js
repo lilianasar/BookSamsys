@@ -1,8 +1,6 @@
-//import { Modal, bottomNavigationActionClasses } from "@mui/material";
 import React, { Component, useState, useEffect} from "react";
-//import { unstable_useViewTransitionState } from "react-router-dom";
-import { variables } from "../Variables";
-//import { Pagination } from "../components/Pagination";
+import axios from "axios";
+import { variables } from "../services/api";
 
 export class Book extends Component {
   constructor(props) {
@@ -97,16 +95,17 @@ changePrecoFilter = (e)=>{
   this.FilterFn();
 }     
   
-  
+  //function Table(){
   refreshList() {
+   
 
-
-    fetch(variables.API_URL + "book/pg?pageNumber=0&pageQuantity=5")
+    fetch(variables.API_URL + "book?pageNumber=1&pageQuantity=3")///pg?pageNumber=0&pageQuantity=5")
       .then((response) => response.json())
       .then((data) => {
-        this.setState({ books: data.obj, booksWithoutFilter: data });
+        this.setState({ books: data, booksWithoutFilter: data });
+        console.log(data)
         
-        /*const total = data.headers["totalRows"];
+        /*const total = data.obj.headers["totalRows"];
         const limit = data.headers["pageQuantity"];
         const totalPages = Math.ceil(total / limit)
         const arrayPages = [];
@@ -114,8 +113,8 @@ changePrecoFilter = (e)=>{
           arrayPages.push(i);
         } 
 
-        this.setState({ books: data.obj, booksWithoutFilter: data });
-      */
+        this.setState({ books: data.obj, booksWithoutFilter: data });*/
+      
       });
   }
 

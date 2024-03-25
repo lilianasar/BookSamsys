@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("BookSamsys.DAL")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+47b3bfaa14247729c4b94f5731bc1edb5fdb2399")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+d416b55785882299d49982d9ab4adce85619b085")]
 [assembly: System.Reflection.AssemblyProductAttribute("BookSamsys.DAL")]
 [assembly: System.Reflection.AssemblyTitleAttribute("BookSamsys.DAL")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

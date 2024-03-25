@@ -18,15 +18,26 @@ namespace BookSamsys.DAL.Repositories
             _context = context;
         }
 
-        public async Task<IEnumerable<Book>> GetAllPag(int pageNumber, int pageQuantity) {
-            return await _context.Livros
-                .Skip((pageNumber) * pageQuantity)
+        public async Task<PagedBookResult> GetAll(int pageNumber, int pageQuantity) {
+            var totalCount = await _context.Livros.CountAsync();
+            var totalPages = (int)Math.Ceiling(totalCount / (double)pageQuantity);
+            var pagedBooks = await _context.Livros
+                .Skip((pageNumber - 1) * pageQuantity)
                 .Take(pageQuantity)
                 .ToListAsync();
+            var pagedBookData = new PagedBookResult {
+                Books = pagedBooks,
+                TotalCount = totalCount,
+                TotalPages = totalPages
+            };
+
+            return pagedBookData;
+
         }
+        /*       
         public async Task<IEnumerable<Book>> GetAll() {
             return await _context.Livros.ToListAsync();
-        }
+        }*/
         public async Task<Book> GetById(int id) {
             return await _context.Livros.AsNoTracking().FirstOrDefaultAsync(x => x.Id == id);
         }
@@ -72,6 +83,7 @@ namespace BookSamsys.DAL.Repositories
             return dataRepeated;
         }
 
+        
         /*public Task<bool> ValidatePrice(decimal preco) {
             //verifica se o preço é negativo
             var priceValidate = preco < 0;

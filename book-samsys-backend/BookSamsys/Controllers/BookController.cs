@@ -19,24 +19,23 @@ namespace BookSamsys.Controllers
     public class BookController : ControllerBase {
 
         private readonly IBookService _bookService;
-        private readonly BookContext? _context;
 
-        public BookController(IBookService bookService, BookContext bookContext) {
+        public BookController(IBookService bookService) {
             _bookService = bookService;
-            _context = bookContext;
-        }
-
-        [HttpGet("pg")]
-        public async Task<ActionResult<IEnumerable<BookDTO>>> GetAllPag(int pageNumber, int pageQuantity) {
-            var responseBooksDTOGetAllPag = await _bookService.GetAllPag(pageNumber, pageQuantity);
-            return responseBooksDTOGetAllPag.Success == false ? BadRequest(responseBooksDTOGetAllPag.Message) : Ok(responseBooksDTOGetAllPag);
         }
 
         [HttpGet()]
+        public async Task<ActionResult<MessagingHelper<PagedBookResult>>> GetAll(int pageNumber = 1, int pageQuantity = 5) {
+            MessagingHelper<PagedBookResult> responseBooksDTOGetAllPag = await _bookService.GetAll(pageNumber, pageQuantity);
+            
+                return responseBooksDTOGetAllPag.Success == false ? BadRequest(responseBooksDTOGetAllPag) : Ok(responseBooksDTOGetAllPag);     
+        }
+
+        /*[HttpGet()]
         public async Task<ActionResult<IEnumerable<BookDTO>>> GetAll() {
             var responseBooksDTOGetAll = await _bookService.GetAll();
             return responseBooksDTOGetAll.Success == false ? BadRequest(responseBooksDTOGetAll.Message) : Ok(responseBooksDTOGetAll);
-        }
+        }*/
         /*[HttpGet("{page}")]
         public async Task<ActionResult<List<BookDTO>>> GetAll(int page) {
             if (_context.Livros == null) return NotFound();

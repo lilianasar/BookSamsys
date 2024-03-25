@@ -6,10 +6,21 @@
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
-    "Parameters": [],
+    "Parameters": [
+      {
+        "Name": "pageNumber",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "pageQuantity",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
     "ReturnTypes": [
       {
-        "Type": "System.Collections.Generic.IEnumerable\u00601[[BookSamsys.Infrastructure.DTOs.BookDTO, BookSamsys.Infrastructure, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "Type": "BookSamsys.Infrastructure.DTOs.MessagingHelper\u00601[[BookSamsys.Infrastructure.DTOs.PagedBookResult, BookSamsys.Infrastructure, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
         "MediaTypes": [
           "text/plain",
           "application/json",
@@ -78,37 +89,6 @@
     "ReturnTypes": [
       {
         "Type": "BookSamsys.Infrastructure.DTOs.BookDTO",
-        "MediaTypes": [
-          "text/plain",
-          "application/json",
-          "text/json"
-        ],
-        "StatusCode": 200
-      }
-    ]
-  },
-  {
-    "ContainingType": "BookSamsys.Controllers.BookController",
-    "Method": "GetAllPag",
-    "RelativePath": "api/Book/pg",
-    "HttpMethod": "GET",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [
-      {
-        "Name": "pageNumber",
-        "Type": "System.Int32",
-        "IsRequired": false
-      },
-      {
-        "Name": "pageQuantity",
-        "Type": "System.Int32",
-        "IsRequired": false
-      }
-    ],
-    "ReturnTypes": [
-      {
-        "Type": "System.Collections.Generic.IEnumerable\u00601[[BookSamsys.Infrastructure.DTOs.BookDTO, BookSamsys.Infrastructure, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
         "MediaTypes": [
           "text/plain",
           "application/json",

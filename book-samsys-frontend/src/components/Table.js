@@ -1,5 +1,5 @@
 import React, {useEffect, useState} from "react";
-import api from '../Variables';
+import api from '../services/api';
 
 function Table(){
   useEffect(() => {

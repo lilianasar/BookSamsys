@@ -10,8 +10,5 @@ namespace BookSamsys.Infrastructure.DTOs
         public bool Success { get; set; }
         public string Message { get; set; } 
         public T Obj { get; set; }
-        public int pageNumber { get; set; }
-        public int pageQuantity { get; set; }
-        public int totalRows { get; set; }
     }
 }

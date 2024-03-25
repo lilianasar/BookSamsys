@@ -6,6 +6,7 @@ using BookSamsys.Infrastructure.Mappings;
 using FluentAssertions.Common;
 using Microsoft.EntityFrameworkCore;
 using System.Configuration;
+using System.Net.Mime;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -16,11 +17,14 @@ builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen(); //ambiente da API
 
+builder.Services.AddTransient<BookContext>();
+builder.Services.AddTransient<IBookRepository, BookRepository>();
 
 //Adicionar cors -> para ser lido pelo frontend
 builder.Services.AddCors(p => p.AddPolicy("corspolicy", build => {
     build.WithOrigins("http://localhost:3000").AllowAnyMethod().AllowAnyHeader();
 }));
+
 
 
 builder.Services.AddDbContext<BookContext>(options => {

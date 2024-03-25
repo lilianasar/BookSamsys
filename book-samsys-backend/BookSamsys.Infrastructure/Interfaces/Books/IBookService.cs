@@ -9,8 +9,8 @@ namespace BookSamsys.Infrastructure.Interfaces.Books
 {
     public interface IBookService
     {
-        Task<MessagingHelper<IEnumerable<BookDTO>>> GetAllPag(int pageNumber, int pageQuantity);
-        Task<MessagingHelper<IEnumerable<BookDTO>>> GetAll();
+        Task<MessagingHelper<PagedBookResult>> GetAll(int pageNumber, int pageQuantity);
+        //Task<MessagingHelper<IEnumerable<BookDTO>>> GetAll();
         Task<MessagingHelper<BookDTO>> GetById(int id);
         Task<MessagingHelper<BookPostDTO>> Create(BookPostDTO bookPostDTO);
         Task<MessagingHelper<BookDTO>> Update(BookDTO bookDTO);
